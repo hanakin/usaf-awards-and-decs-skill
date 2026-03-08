@@ -1,4 +1,4 @@
 interface:
-  display_name: "USAF Awards andn Decorations"
+  display_name: "USAF Awards and Decorations"
   short_description: "Draft USAF award and decoration packages fast."
   default_prompt: "Help me draft a USAF award and decoration from these notes."

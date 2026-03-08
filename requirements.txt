@@ -1,0 +1,2 @@
+# This skill's Python scripts use the standard library only.
+# No third-party Python packages are required at this time.
