@@ -128,8 +128,10 @@ When space is limited, prefer:
 - Keep the tone formal and dignified without sounding automatic
 - Avoid repeating the exact language of another decoration for the same period
 - Expand source bullets into fact-based narrative rather than copying them verbatim
+- Preserve the decisive metrics and mission effects from the selected accomplishments instead of summarizing them into vague praise
 - Use transition phrases only when they improve flow or when the required format expects them
 - Spell out organizations, operations, and terms instead of shortening them
+- Spell out ranks in decoration prose rather than leaving abbreviated forms
 - Avoid abbreviation-heavy writing even when the underlying source notes use shorthand
 
 ## Citation-specific reminders

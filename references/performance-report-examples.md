@@ -6,19 +6,27 @@ Treat them as authoritative style references for this skill.
 Do not copy them verbatim unless the user explicitly wants the source wording preserved.
 Use them to reason about category fit, push style, compression, and acceptable voice.
 
+## Duty Description
+
+- As Out of Access NCOIC, TSgt Snuffy inprocesses & oversees Airmen awaiting clearances, coordinates Sq events, & manages accountability and development of 25 flight members. He is also responsible for the Sq IQT planning team for 8 work roles & managing a training pipeline for out-of-access airmen in support of the Sq stan eval mission. 1N8 lead for 5-member exercise planning team that coordinates with HHQ to meet ACC & CCMD readiness requirements.
+
+- As Joint Targeting Lead TSgt Snuffy fills an 0-3 OIC billet managing all target nominations and development for a 131-member task force, ensuring approval of all targets to USCYBERCOM and DoD requirements. He serves as the Air Force functional manager for targeting, advising GP leaders and mentoring 5 target analysts across 7 USCYBERCOM organizations. Additionally, as Deputy Flight Chief, he administers and mentors the largest flight in the SQ.
+
+- As Chief of Joint Targets, TSgt Snuffy fills an O-3 role managing targeting development, SOPs, TTPs & provides inputs to intel & targeting policies, doctrine & requirements for a 250-member JTF. Additionally, he serves as the AF targeting functional manager advising AF & Joint leaders, while mentoring 4 Amn across 4 USCYBERCOM organizations. Lastly, as Deputy Flight Chief for 39-members, he provides trained & equipped combat ready Amn to 2 JTFs.
+
 ## E
 
-- As the Sq SME, Snuffy integrated the Joint Target Analyst workrole into the unit exercise & established a career growth chart standard to shape talent management & readiness across 4 Total Force Wgs, earning a Gp CC coin. As a planning team lead, he drove the exercise with ACC reps & Wg IG to develop a path for units to meet ACC exercise requirements.
+- As the Sq SME, Snuffy integrated the Joint Target Analyst workrole into a unit exercise & established a career growth chart standard to shape talent management & readiness across 4 Total Force Wgs, earning a Gp/CC coin. As a planning Tm lead, he drove the exercise with ACC reps & Wg/IG to develop a path for units to meet ACC exercise requirements.
 
-- Peter piloted 1N8 participation in advanced work role courses earning distinguished graduate and becoming first master-qualified target analyst in the CCMD. He built his joint task force's 1st ever order of battle database, vectored training for 16 analysts increasing object capture 94% in 4 months, elevating the CCMD's ability to expand 3 LOEs.
+- Peter piloted 1N8 participation in advanced work role courses earning distinguished graduate & becoming first master-qualified cyber targeting analyst in the CCMD. He built his joint TF's 1st order of battle database, vectored training for 16 analysts increasing object capture 94% in 4 months, elevating the CCMD's ability to expand 3 LOEs.
 
 - Peter infused new target discovery & development TTPs that mitigated stalls, legal and reporting issues which expedited 19 target kill chains across 10 ops. Additionally, as CNMF's system analysis tool program manager, he trained and managed 33 CCMD analysts which resolved a DoW-wide issue by restoring 2.5M target identifiers in 1.5K databases.
 
 ## L
 
-- TSgt Snuffy oversaw 25-Amn section awaiting clearances, launching training path development & smooth transition to ops mission, resulting in 3 Gp & 3 Wg awards. He also led 10 member team for Sq family-day event, assuring execution for 105 attendees. He also coordinated the gp communication plan for Wg CCC all, providing virtual delivery for 250 Amn.
+- Snuffy oversaw 25-Amn section awaiting clearances, launching training path development & smooth transition to ops mission, resulting in 3 Gp & 3 Wg awards. He also led 10 member Tm for Sq family-day event, assuring execution for 105 attendees. He also coordinated the gp communication plan for Wg CCC all, providing virtual delivery for 250 Amn.
 
-- TSgt Snuffy Briefed Gp CC's on 2 occasions on the utilization of target analysts across 3 CCMD task forces. His expertise outlined critical issues with solutions for action earning Sq and Gp CC lauding. On top of that he led creation of a Sq mentoring program 29 sessions. Institutionalized NCO development and values, earning Gp attention and praise.
+- Snuffy briefed Gp & Wg leaders on 3 occasions on target analysts utilization across 3 CCMD TFs. His expertise outlined critical issues and solutions for action earning Gp lauding and a Wg coin. On top of that he led creation of a Sq mentoring program 29 sessions. Institutionalized NCO development and values, earning Gp attention and praise.
 
 - As Deputy Flt Chief, Snuffy drove his Flt to attack 2 Gp readiness goals; being the only unit above 90% & earning 2 day passes. Additionally, he led 40 airmen to run exercises for 2 Sq All calls; fulfilling a Sq/CC directive to improve the unity & cohesion of 250 members across 2 squadrons. Also, he aided 4 airmen through financial & family issues.
 
@@ -32,7 +40,7 @@ Use them to reason about category fit, push style, compression, and acceptable v
 
 ## I
 
-- TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-year old app. His feedback was lauded by DoD joint staff as "most detailed ever". He also authored SOP for Joint Targeting Analysts, merging AF targeting doctrine with cyber TTPs to fortify 1N8 role for joint cyber mission.
+- TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoD joint staff as "most detailed ever". He also authored Joint Targeting Analysts SOP, merging AF targeting doctrine with cyber TTPs to fortify 1N8 role for joint cyber mission.
 
 - TSgt Snuffy participated in 2 DoD Joint Staff development initiatives to re-design the tool of record for targeting. His expertise and knowledge was lauded as best feedback they have ever received. Additionally Peter created a real time target vizualization dashboard providing CCMD leaders status and metrics on development of 3 LOEs across the AOR.
 
@@ -42,8 +50,8 @@ Use them to reason about category fit, push style, compression, and acceptable v
 
 `H` examples are intentionally different from the other ALQs. Treat them as push-statement references and preserve their stronger recommendation tone when the user is building `H` content.
 
-- TSgt Snuffy is a highly competent targeteer & CSS non-commissioned officer in charge, creating training for his career field as well as mentoring inbound Airmen. He brings both talent & professionalism, critically developing any team he was a part of.
+- Peter is a highly competent targeteer & CSS non-commissioned officer in charge, creating training for his career field as well as mentoring inbound Airmen. He brings both talent & professionalism, critically developing any team he was a part of.
 
 - Peter orchestrated the first-ever 1N8 ACC/HAF functional team visit to a cyber unit, coordinating with 13 ACC, HAF, task force and CCMD members. His efforts gave insight into systemic issues to 1N8 utilization, manning, & training across USCYBERCOM.
 
-- Peter has demonstrated unparalleled technical expertise as a Master Joint Target analyst that certified 5 of the top unit analysts! His leadership set the standard for a 1st ever cross-TF analyst sync and showcases his readiness to be a MSgt now!
+- Peter demonstrated unparalleled expertise as a Master Joint Target analyst pioneering a master cadre across all 3 CNMF TFs by training 6 analysts! His leadership set the standard for a 1st cross-TF sync & showcases his readiness to be a MSgt now!

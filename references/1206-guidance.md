@@ -2,6 +2,8 @@
 
 Use this reference for `AF Form 1206` work after reading `statement-shared.md`.
 
+This lane is assistive by default. If the user asks for one statement, provide one statement. If the user asks for a paragraph-format package, provide the requested paragraph block or blocks.
+
 ## Supported 1206 formats
 
 `AF Form 1206` work in this skill supports two formats:
@@ -43,6 +45,8 @@ Always identify which format is required before drafting.
 3. For paragraph format, build the full paragraph block or blocks requested by the format
 4. Validate length, acronym use, name format, repetition, spelling, grammar, clarity, and impact
 5. Revise until the user approves
+
+At each step, use the approved `1206` examples to show what strong statement shaping, ranking logic, and board-readable compression look like.
 
 Use `statement-validation.md` for the full validation order, troubleshooting logic, impactfulness checklist, clarity checklist, and conflict-resolution priority.
 

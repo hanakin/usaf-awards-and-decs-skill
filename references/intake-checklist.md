@@ -1,6 +1,6 @@
 # Intake Checklist
 
-Use this checklist before drafting. Missing facts are the main reason performance reports, awards packages, and decorations come back weak, noncompliant, or unusable.
+Use this checklist selectively before drafting. Missing facts are the main reason performance reports, awards packages, and decorations come back weak, noncompliant, or unusable. Do not treat every item here as mandatory for every request. Ask only for the inputs needed for the specific piece the user wants help with.
 
 ## Required facts
 
@@ -46,6 +46,9 @@ For each accomplishment, gather:
 
 - Confirm required section structure
 - Treat `EPB` and `OPB` as interchangeable terms in this skill unless the user introduces a meaningful distinction
+- If the user is asking for Duty Description help, capture the core duties and any additional duties that need to be reflected in the Duty Description
+- If the user is asking for Duty Description help or full-report alignment, apply the hard limit: `450`
+- If the user is asking for Duty Description help or full-report alignment, confirm the Duty Description covers the same responsibility set reflected in the ALQs
 - Capture the ALQ section and apply the hard limit: `350` for `E`, `L`, `M`, and `I`; `250` for `H`
 - Confirm mandatory comments, especially `PFA` or `CFT` language when applicable
 - Confirm future-role recommendations are not veiled promotion statements
@@ -82,10 +85,10 @@ Use short placeholders instead of fabricating:
 
 ## Fast intake prompt
 
-Ask the user for:
+Ask the user only for what the requested piece requires. Typical prompt:
 
 1. Document type, award or report type, and period
-2. Top 3 to 5 accomplishments
+2. Core duties, additional duties, and top 3 to 5 accomplishments
 3. Metrics for each accomplishment
 4. Any local template, line limit, character limit, or sample package
 5. Any required comments or special constraints

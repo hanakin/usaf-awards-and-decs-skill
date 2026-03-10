@@ -8,7 +8,7 @@ Use for evaluation-style writing that captures sustained performance over a repo
 
 Recommended structure:
 
-- Duty context only as needed to frame the accomplishment
+- Duty Description paragraph summarizing the member's key responsibilities in `450` characters
 - Strong performance statements placed in the required evaluation sections rather than merged into one narrative
 - Evidence of leadership, followership, improvement, and readiness as relevant to the report format
 - Tight language that reads like evaluation content, not like a citation
@@ -25,6 +25,7 @@ Policy anchors:
 
 Workflow notes:
 
+- Build or validate the Duty Description first so it covers the responsibilities represented in the ALQ statements.
 - When the user wants statement options, generate multiple materially different phrasings rather than minor verb swaps.
 - Keep the member name near the front of the statement when the format expects named statements.
 - Treat `EPB` and `OPB` as interchangeable terms in this skill.
@@ -32,6 +33,7 @@ Workflow notes:
 
 Performance-report length rule:
 
+- Use `450` characters for the Duty Description paragraph
 - Use `350` characters for `E`, `L`, `M`, and `I`
 - Use `250` characters for `H`
 - Use exact counting when the user is drafting statement text to fit those blocks
@@ -64,6 +66,9 @@ Critical rules:
 - Use placeholders instead of fabricating missing required facts
 - Run spelling and grammar review before final delivery
 - Spell terms out in decoration prose; do not rely on abbreviations or acronyms
+- When the required local format uses 7 lines, treat line 1 as the intro, lines 2 through 6 as accomplishment lines, and line 7 as the closing
+- Treat `1350` characters as a hard ceiling when using that decoration format
+- For 5-accomplishment citation bodies, lead with the strongest mission-impact accomplishment and close the body with the strongest overall accomplishment
 
 ## AF Form 1206 style content
 
