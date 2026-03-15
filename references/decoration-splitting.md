@@ -31,9 +31,13 @@ Apply splitting in this order.
 - If the source uses a single run-on sentence but clearly contains two accomplishments, normalize it into 2 sentence-level split items before review
 - Do not use this rule for entries that already contain 2 or 4 sentences
 - Use meaning, not trigger words, to identify the break
+- When one run-on sentence contains one continuous development or qualification event, keep that full event together in split `1`
+- A continuous development or qualification event may include training, education, course completion, GPA, certification, qualification, or similar credentialing details when they all describe the same growth event
+- Do not split merely because the sentence reaches a certification, qualification, earning, or credentialing clause if that clause still completes the same development event
 - If the downstream effect is grammatically attached to the first clause but functionally describes a separate accomplishment or result, still split it
 - Keep the first accomplishment together in split `1`
 - Move the second distinct accomplishment, result, recognition, or follow-on effect into split `2`
+- When the sentence shifts from the development or qualification event to what that event enabled operationally, keep the enabled mission effect in split `2`
 - After resolving this edge case manually, confirm that the source entry still produces exactly `2` split rows
 
 ### 4. Apply the normal sentence-count rule

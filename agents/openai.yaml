@@ -2,3 +2,125 @@ interface:
   display_name: "USAF Awards and Decorations"
   short_description: "Draft USAF award and decoration packages fast."
   default_prompt: "Help me draft a USAF award and decoration from these notes."
+
+
+
+
+
+
+
+
+
+
+EPB 2023:
+E:
+- Peter analyzed 312 intel reports to track 100 malicious cyber actors, producing 4 critical intelligence products that informed senior J2 and TF leaders and enabled 3 operations. He also executed 300 project taskings requiring research, analysis, and reporting, accelerated turnaround, directly supporting disruption of a primary CCMD cyber threat.
+L:
+- Peter audited analysts during premier cyber exercise, providing critical feedback to exercise leads shaping future execution and refined elite cyber teams’ offensive and defensive tactics. During Red Flag exercise, he produced 200 real-time intel products for a cyber mission element, enhancing intel integration to accelerate operational outcomes.
+M:
+- SrA Peter Snuffy maximized effectiveness by training in subjects outside his specialty, completing the 216-hour Cyber Threat Intelligence Analysis course with a 4.0 GPA, certifying as a Basic-level All Source Analyst within the Cyber community, which ensured all 58 reports were selected and communicated effectively to Joint Task Force leadership.
+I:
+- SrA Peter Snuffy is always the first to volunteer for events both in the squadron and community. He was instrumental in raising $5000 for events through the post Top 3. This helped fund the Air Force Ball for all Fort Meade, promoting tradition and esprit de corps. He is also sponsoring two new Airmen, being a conduit to the area and unit.
+H:
+- SrA Peter Snuffy supported STORMFORCE: an international, inter-service Electronic Warfare exercise spanning 2 months with 600 people, directly impacting 89 sorties and validating 9 procedures, earning a Letter of Appreciation from the exercise chief.
+
+EPB 2024:
+E:
+- Peter completed a 16 hr foreign threats & generative AI course, refining disinformation detection and countermeasures on 22 products for 8 targets. He conducted IPB for 13 personnel in the offensive cyber element of Red Flag 25-1, analyzing 60 multi-source reports to develop a common operating picture for the mission commander.
+L:
+- Peter instructed 17 hrs of Tactical Combat Casualty Care courses for 85 Amn helping the Sq meet 100% CSAF readiness requirement. He completed 3 days of resilience training, earning his Resilience Training Assistant certification, increasing Sq resilience training availability by 11% and expanding support for 134 Amn
+M:
+- Peter orchestrated 5 Sq events, securing $1,292 for venues and meals, strengthening camaraderie for 151 Airmen and families. He completed 27 training items for senior-level certification, driving a junior airman to senior-level proficiency for a 50% boost in his job roles readiness directly aligning with a NAF #1 Priority.
+I:
+- Peter audited the clearance access database, resolving issues for 10 TF members ensuring unhindered intel activities during 4 ops. He volunteered 16 hrs for Wreaths Across America, an AI conference, and the NCO Induction, honoring 47 fallen heroes, supporting 550 military members, and promoting Air Force program awareness to foster esprit de corps.
+H:
+- Peter generated 51 weekly assessments & 129 daily products synthesizing intel from 22 sources and 5.5K reports. He dedicated 135 hrs to 3 RFIs, reviving an 8-month dormant foreign adversary, driving 5 cyber ops executed by a forward deployed unit.
+
+EPB 2025:
+E:
+- SrA Peter Snuffy published a report disclosing adversary recruitment techniques, which fortified the security posture with respect to the top priority national mission and was praised by the 16th Air Force Commander. Overall, he has created 58 reports after evaluating 950 documents, providing timely products for Joint Task Force leadership.
+L:
+- Peter audited analysts during premier cyber exercise, providing critical feedback to exercise leads shaping future execution and refined elite cyber teams’ offensive and defensive tactics. During Red Flag exercise, he produced 200 real-time intel products for a cyber mission element, enhancing intel integration to accelerate operational outcomes.
+M:
+- Peter trained 5 analysts on 217 basic and 194 senior JQR items, rapid qualification closing a manning gap, raising qualified personnel by 12% and enabling sustained TF surge ops. He taught TCCC to 35 Airmen and led 2 resiliency sessions for 250 personnel, delivering lifesaving skills and enhancing readiness in support of the SECWAR’s #1 priority.
+I:
+- SSgt Peter Snuffy led 3 beach cleanups and supported AFSA outreach via a catering company, earning city recognition and enhancing civic engagement. He secured $2K in UNITE Fund for food, venue, and morale-focused programming for 2 sq events benefiting 150 Airmen, increasing connectedness, resilience, and unit cohesion per CC direction.
+H:
+- Peter led a rewrite of the analysis training, closing training gaps across core analytic tasks and enabling qualified analysts to support steady-state ops, driving the Group’s highest readiness. He balanced mission and admin duties at the SSgt level.
+
+
+
+
+
+
+1 mission: analysis and production
+2 task management : mission
+3 exercise: mission
+4 exercise: red flag
+5 mission: training
+6 mission: analysis and production
+7 volunteer
+8 Admin: general
+9 exercise: other
+10 mission: training and production
+11 exercise: red flag
+12 Admin: readiness and training
+13 Admin: readiness and training
+14 volunteer
+15 mission: training
+16 Mission: additional duty
+17 volunteer
+18 mission: analysis and production
+19 mission: analysis and production
+20 mission: analysis and production
+21 exercise: duplicate from 23 #3?
+22 exercise: red flag duplicate from 23 #3?
+23 mission: training
+24 Admin: readiness and training
+25 volunteer
+26 volunteer
+27 mission: training
+
+Split Review
+
+Split #	EPB Ref	Merged ID	Split
+1	E23		Peter analyzed 312 intel reports to track 100 malicious cyber actors, producing 4 critical intelligence products that informed senior J2 and TF leaders and enabled 3 operations.
+2	E23		He also executed 300 project taskings requiring research, analysis, and reporting, accelerated turnaround, directly supporting disruption of a primary CCMD cyber threat.
+3	L23	M1	Peter audited analysts during premier cyber exercise, providing critical feedback to exercise leads shaping future execution and refined elite cyber teams' offensive and defensive tactics.
+4	L23	M1	During Red Flag exercise, he produced 200 real-time intel products for a cyber mission element, enhancing intel integration to accelerate operational outcomes.
+5	M23	M2	SrA Peter Snuffy maximized effectiveness by training in subjects outside his specialty, completing the 216-hour Cyber Threat Intelligence Analysis course with a 4.0 GPA, certifying as a Basic-level All Source Analyst within the Cyber community.
+6	M23	M2	He ensured all 58 reports were selected and communicated effectively to Joint Task Force leadership.
+7	I23		SrA Peter Snuffy is always the first to volunteer for events both in the squadron and community. He was instrumental in raising $5000 for events through the post Top 3.
+8	I23		This helped fund the Air Force Ball for all Fort Meade, promoting tradition and esprit de corps. He is also sponsoring two new Airmen, being a conduit to the area and unit.
+9	H23	M4	SrA Peter Snuffy supported STORMFORCE: an international, inter-service Electronic Warfare exercise spanning 2 months with 600 people, directly impacting 89 sorties and validating 9 procedures, earning a Letter of Appreciation from the exercise chief.
+10	E24		Peter completed a 16 hr foreign threats & generative AI course, refining disinformation detection and countermeasures on 22 products for 8 targets.
+11	E24	M3	He conducted IPB for 13 personnel in the offensive cyber element of Red Flag 25-1, analyzing 60 multi-source reports to develop a common operating picture for the mission commander.
+12	L24	M2	Peter instructed 17 hrs of Tactical Combat Casualty Care courses for 85 Amn helping the Sq meet 100% CSAF readiness requirement.
+13	L24	M2	He completed 3 days of resilience training, earning his Resilience Training Assistant certification, increasing Sq resilience training availability by 11% and expanding support for 134 Amn.
+14	M24		Peter orchestrated 5 Sq events, securing $1,292 for venues and meals, strengthening camaraderie for 151 Airmen and families.
+15	M24	M5	He completed 27 training items for senior-level certification, driving a junior airman to senior-level proficiency for a 50% boost in his job roles readiness directly aligning with a NAF #1 Priority.
+16	I24		Peter audited the clearance access database, resolving issues for 10 TF members ensuring unhindered intel activities during 4 ops.
+17	I24		He volunteered 16 hrs for Wreaths Across America, an AI conference, and the NCO Induction, honoring 47 fallen heroes, supporting 550 military members, and promoting Air Force program awareness to foster esprit de corps.
+18	H24	M6	Peter generated 51 weekly assessments & 129 daily products synthesizing intel from 22 sources and 5.5K reports. He dedicated 135 hrs to 3 RFIs, reviving an 8-month dormant foreign adversary, driving 5 cyber ops executed by a forward deployed unit.
+19	E25	M7	SrA Peter Snuffy published a report disclosing adversary recruitment techniques, which fortified the security posture with respect to the top priority national mission and was praised by the 16th Air Force Commander.
+20	E25	M7	Overall, he has created 58 reports after evaluating 950 documents, providing timely products for Joint Task Force leadership.
+21	L25	M1	Peter audited analysts during premier cyber exercise, providing critical feedback to exercise leads shaping future execution and refined elite cyber teams' offensive and defensive tactics.
+22	L25	M1	During Red Flag exercise, he produced 200 real-time intel products for a cyber mission element, enhancing intel integration to accelerate operational outcomes.
+23	M25	M5	Peter trained 5 analysts on 217 basic and 194 senior JQR items, rapid qualification closing a manning gap, raising qualified personnel by 12% and enabling sustained TF surge ops.
+24	M25	M2	He taught TCCC to 35 Airmen and led 2 resiliency sessions for 250 personnel, delivering lifesaving skills and enhancing readiness in support of the SECWAR's #1 priority.
+25	I25		SSgt Peter Snuffy led 3 beach cleanups and supported AFSA outreach via a catering company, earning city recognition and enhancing civic engagement.
+26	I25		He secured $2K in UNITE Fund for food, venue, and morale-focused programming for 2 sq events benefiting 150 Airmen, increasing connectedness, resilience, and unit cohesion per CC direction.
+27	H25	M8	Peter led a rewrite of the analysis training, closing training gaps across core analytic tasks and enabling qualified analysts to support steady-state ops, driving the Group's highest readiness. He balanced mission and admin duties at the SSgt level.
+Proposed Merges
+
+M1 Peter audited analysts during a premier cyber exercise and produced 200 real-time Red Flag intelligence products, shaping future execution, refining elite cyber tactics, and accelerating operational outcomes for the cyber mission element.
+M2 Peter built force readiness through advanced analyst development, Tactical Combat Casualty Care instruction, and resilience training, expanding squadron support capacity while improving intelligence reporting and readiness execution.
+M3 Peter applied new foreign-threat and generative-artificial-intelligence training to improve disinformation detection on 22 products for 8 targets, then conducted IPB for 13 offensive cyber personnel during Red Flag 25-1 using 60 multi-source reports to build the mission commander's common operating picture.
+M4 SrA Peter Snuffy supported STORMFORCE, a 2-month international, inter-service Electronic Warfare exercise involving 600 personnel, directly impacting 89 sorties, validating 9 procedures, and earning a Letter of Appreciation from the exercise chief.
+M5 Peter developed personnel by completing senior-level certification work, driving a junior Airman to senior-level proficiency, and training 5 analysts on 217 basic and 194 senior JQR items, closing a manning gap and increasing qualified personnel by 12 percent for sustained task force surge operations.
+M6 Peter generated 51 weekly assessments and 129 daily products from 22 sources and 5.5 thousand reports, then devoted 135 hours to 3 RFIs that revived an 8-month dormant foreign adversary and drove 5 cyber operations by a forward deployed unit.
+M7 SrA Peter Snuffy disclosed adversary recruitment techniques in a report praised by the 16th Air Force Commander, fortified the security posture for the top priority national mission, and delivered 58 reports after evaluating 950 documents for Joint Task Force leadership.
+M8 Peter led a rewrite of analysis training that closed core task gaps, enabled qualified analysts to support steady-state operations, and drove the Group's highest readiness.
+
+1. A focus on providing metrics needs to be included in the merge.
+3. We need to first probably take a pass at grouping then by category. we will need to for each split summerize it into a 1-3 word category. and then group them maybe by these first. to help with this there is some context you will need to know things like color (red, blue, black, etc) + flag = exercise
