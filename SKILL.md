@@ -1,6 +1,6 @@
 ---
 name: usaf-awards-and-decorations
-description: Draft, refine, and package United States Air Force writing products that turn accomplishments into performance reports, awards packages, and decorations content. Use when Codex needs to produce or revise USAF-style performance statements, AF Form 1206 award content, medal citations, justification narratives, accomplishment-impact-result statements, or leadership-ready summaries for military recognition packages.
+description: Draft, refine, and package United States Air Force writing products that turn accomplishments into performance reports, awards packages, and decorations content. Use when Codex needs to produce or revise USAF-style performance statements, AF Form 1206 award content, medal citations, accomplishment-impact-result statements, or leadership-ready summaries for military recognition packages.
 ---
 
 # USAF Awards and Decorations
@@ -22,7 +22,7 @@ This skill is assistive and incremental by default. Do not assume the user wants
 1. Identify the specific help requested. Determine whether the user wants a duty description, one performance statement, ALQ-category help, one `AF Form 1206` statement, a full `1206` paragraph, a decoration citation, or some other discrete piece.
 2. Collect only the facts needed for that requested piece. Use [references/intake-checklist.md](references/intake-checklist.md) selectively instead of treating it like a mandatory full-package intake. Do not ask for real personal header data; use the generic placeholder identity `SSgt Peter Snuffy` unless the user explicitly wants a different placeholder.
 3. Confirm the governing source before writing. Use current guidance and templates as the controlling standard for format-specific behavior when they conflict with older baseline policy. Use [references/AFH 33-337/index.md](references/AFH%2033-337/index.md), [references/DAFPD 36-28.md](references/DAFPD%2036-28.md), [references/DAFI 36-2803.md](references/DAFI%2036-2803.md), [references/DAFMAN 36-2806.md](references/DAFMAN%2036-2806.md), and [references/AFI 36-2406.md](references/AFI%2036-2406.md) as baseline policy and writing authorities.
-4. Identify the target writing lane before writing. Use [references/output-formats.md](references/output-formats.md) to choose the right structure for a performance report, an award package (`AF Form 1206`), a decoration citation or justification, or a short leadership summary.
+4. Identify the target writing lane before writing. Use [references/output-formats.md](references/output-formats.md) to choose the right structure for a performance report, an award package (`AF Form 1206`), a decoration citation, or a short leadership summary.
 5. Rewrite the provided material into action, impact, result form when the requested piece requires it. Use [references/writing-patterns.md](references/writing-patterns.md) to tighten verbs, add scale, and eliminate vague praise.
 6. Build only the requested output. Do not expand into additional sections unless the user asks for them.
 7. Check hard length limits before finalizing. When a format is character-constrained, use [scripts/count_text.py](scripts/count_text.py) for exact counts.
@@ -35,12 +35,12 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Keep claims proportional and believable.
 - Preserve official names, units, dates, and capitalization exactly as provided.
 - Avoid unsupported superlatives unless the user supplies evidence.
-- Avoid making decorations sound automatic; the justification should show why the performance clearly exceeded normal duty expectations.
+- Avoid making decorations sound automatic; the citation should show why the performance clearly exceeded normal duty expectations.
 - Keep all claimed actions supportable by the facts provided. Do not introduce stratification statements, invented endorsements, or unsupported comparisons.
 - For citations, do not use unauthorized abbreviations or acronyms, and do not include classified information.
 - Do not force decoration narrative into `1206` structure, and do not force `1206` language into performance reports.
 - Treat character limits as hard constraints when the format requires them. Count the entire string, including letters, numbers, whitespace, punctuation, symbols, and special characters.
-- When the member served in a joint organization, default to checking whether a DoD joint award is the proper recognition before drafting a DAF decoration.
+- When the member served in a joint organization, default to checking whether a Department of War joint award is the proper recognition before drafting a DAF decoration.
 - Default to spelling terms out. Use acronyms only when they are broadly understood and authorized by the governing acronym guidance.
 - Treat current guidance, templates, and accepted practices as controlling for live format behavior when they conflict with older policy references. Use the policy references as the baseline and ask for clarification only when the conflict materially changes the output and cannot be resolved from the provided guidance.
 
@@ -61,6 +61,19 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - For statement-format `AF Form 1206`, provide a single statement unless the user explicitly asks for multiple options.
 - For paragraph-format `AF Form 1206` and for decorations, provide the full paragraph or full citation body the user asked for.
 - For decorations, keep source IDs stable during ranking review by using original bullet IDs, split IDs like `4a`, and consolidation IDs like `4a.9a`; do not invent a separate ranking-only numbering system.
+- For decorations, default to asking for the full EPB or OPB statement set covering the medal period; use rough accomplishment bullets only as fallback when those statements are unavailable.
+- For decorations, ask for that EPB or OPB content in categorized form by report and ALQ section, such as `EPB1` then `E`, `L`, `M`, `I`, `H`.
+- For decorations, do not ask the user to pre-rank the strongest accomplishments or choose between citation and justification; default to citation drafting and do the split, consolidation, and ranking work inside the skill.
+- For decorations, if the user already identified the medal family, do not ask them to restate the exact medal label unless they later indicate a different service or a different medal family.
+- For decorations, if EPB or OPB source is unavailable, use a narrow fallback ask for accomplishment statements with metrics and scope only; do not fall back to asking for rank, name, duty title, unit, base, or dates.
+- For decorations, follow this mandatory citation workflow:
+  - request the necessary categorized EPB or OPB statements first
+  - split those statements into numbered accomplishment splits and show any proposed consolidations or merges
+  - stop for user feedback before ranking
+  - then rank the approved consolidated and unconsolidated accomplishments together and show that ranking for review
+  - stop for user feedback on final selection and order before drafting the citation
+  - only build the citation after both review gates are complete, unless the user explicitly tells you to skip them
+- For decorations, do not ask for award period, role, unit, rank, name, or other intro metadata unless the user explicitly wants help filling the intro line.
 - If the task looks compliance-sensitive or template-sensitive, ask for the template only when the missing format would materially change the output.
 
 ## Resources
@@ -70,17 +83,15 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Start with [references/AFH 33-337/quick-map.md](references/AFH%2033-337/quick-map.md) to route the question to the right handbook chapter. Search [references/AFH 33-337/index.md](references/AFH%2033-337/index.md) with [scripts/search_tongue_and_quill.py](scripts/search_tongue_and_quill.py) only when the quick map is not enough.
 - Read [references/DAFI 36-2803.md](references/DAFI%2036-2803.md) for program governance, approval-authority logic, duplicate-recognition constraints, acronym minimization, and other-recognition alternatives when a decoration is not appropriate.
 - Read [references/DAFMAN 36-2806.md](references/DAFMAN%2036-2806.md) for personal military decoration criteria, recommendation mechanics, citation limits, acronym restrictions, and retirement wording rules.
-- Read [references/decoration-guidance.md](references/decoration-guidance.md) for integrated decoration-writing workflow, evidence rules, validation behavior, and persisted worked examples of what right looks like at the split, consolidation, ordering, and final-paragraph stages.
-- Read [references/decoration-ranking.md](references/decoration-ranking.md) before choosing which accomplishments to carry into a decoration citation body. For decoration ranking, split multi-part ALQ statements into individual accomplishments first, consolidate related items second, then rank the consolidated accomplishment groups. Use the worked examples in that file when showing the user what good splitting, consolidation, and citation-body ordering look like.
+- Read [references/decoration-guidance.md](references/decoration-guidance.md) for integrated decoration-writing workflow, medal-family translation, evidence rules, validation behavior, and persisted worked examples of what right looks like at the split, consolidation, ordering, and final-paragraph stages.
+- Read [references/decoration-ranking.md](references/decoration-ranking.md) before choosing which accomplishments to carry into a decoration citation body. For decoration ranking, split multi-part ALQ statements into individual accomplishments first, consolidate related items second, stop for review, then rank the approved consolidated and remaining standalone accomplishments and stop for review again before drafting. Use the worked examples in that file when showing the user what good splitting, consolidation, ranking, and citation-body ordering look like.
 - Read [references/decoration-examples.md](references/decoration-examples.md) for preserved achievement and commendation example citations.
-- Read [references/ascom-guidance.md](references/ascom-guidance.md) for Air Force Commendation Medal (`AFCM`) drafting guidance derived from the user-provided decorations skill.
-- Read [references/ascom-source-guidance.md](references/ascom-source-guidance.md) when you need the preserved source details or need to review unresolved conflicts from that custom guidance.
 - Read [references/AFI 36-2406.md](references/AFI%2036-2406.md) for officer and enlisted performance-brief structure, section-specific writing rules, mandatory fitness comments, stratification limits, and future-role guardrails.
 - Read [references/statement-shared.md](references/statement-shared.md) for shared statement mechanics across the performance-report lane and `AF Form 1206`.
 - Read [references/statement-validation.md](references/statement-validation.md) for the required validation order, troubleshooting flow, impactfulness checklist, clarity checklist, and conflict-resolution priority during statement iteration.
 - Read [references/epb-guidance.md](references/epb-guidance.md) for performance-report statement behavior, ALQ routing, and hard limits.
 - Read [references/performance-report-examples.md](references/performance-report-examples.md) for ALQ-fit examples and one-statement-at-a-time performance-report patterns.
-- Read [references/1206-guidance.md](references/1206-guidance.md) for `AF Form 1206`-specific limits, review workflow, and preserved examples.
+- Read [references/award-guidance.md](references/award-guidance.md) for award-package limits, review workflow, and preserved examples.
 - Read [references/Acronyms.md](references/Acronyms.md) before finalizing performance reports, awards, or decorations that may contain acronyms.
 - Read [references/intake-checklist.md](references/intake-checklist.md) when inputs are incomplete or disorganized.
 - Use [scripts/count_text.py](scripts/count_text.py) when exact length compliance matters.
@@ -89,4 +100,4 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Use [scripts/validate_acronyms.py](scripts/validate_acronyms.py) to flag acronym-like tokens that may violate the approved guidance.
 - Read [references/writing-patterns.md](references/writing-patterns.md) when converting plain-English notes into award language.
 - Read [references/output-formats.md](references/output-formats.md) when choosing structure, section order, or line allocation.
-- Reuse [assets/award-intake-template.md](assets/award-intake-template.md), [assets/1206-template.md](assets/1206-template.md), and [assets/citation-template.md](assets/citation-template.md) as starting documents when the user needs a fill-in template.
+- Reuse [assets/performance-statement-template.md](assets/performance-statement-template.md), [assets/award-template.md](assets/award-template.md), and [assets/citation-template.md](assets/citation-template.md) as starting documents when the user needs a fill-in template.

@@ -119,7 +119,7 @@ When space is limited, prefer:
 - For individual-statement `1206`, optimize each statement to `195-220`
 - For individual-statement `1206`, match the statement count required by the specific award or template
 - For paragraph-format `1206`, optimize to the required line count without forcing statement-style compression
-- Use `1206-guidance.md` for both formats and their constraints
+- Use `award-guidance.md` for both award formats and their constraints
 
 ### Decorations
 
@@ -137,7 +137,7 @@ When space is limited, prefer:
 ## Citation-specific reminders
 
 - Citation text must follow award-specific structure from `DAFMAN 36-2806`
-- `MSM`, `AFAM`, and `AFCM` citations are character-limited in this skill's current medal set
+- Meritorious Service Medal, Achievement Medal, Commendation Medal, and Air Medal citations are character-limited in this skill
 - `BSM` and higher citations are line-limited
 - Use exact counting and acronym validation before finalizing
 - Run spelling and grammar review before finalizing

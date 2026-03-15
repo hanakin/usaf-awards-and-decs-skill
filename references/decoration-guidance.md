@@ -7,7 +7,9 @@ This lane is assistive by default. Provide the specific decoration help requeste
 ## Core decoration rules
 
 - Follow `DAFMAN 36-2806` for citation packaging, basis, opening sentence, closing sentence, and format mechanics
-- Use the current medal set for this skill: `AFAM`, `AFCM`, and `MSM`
+- Use the current medal families for this skill: Achievement Medal, Commendation Medal, Meritorious Service Medal, and Air Medal
+- Translate user-provided medal labels into those generic families before drafting
+- Treat common aliases as equivalent inputs, including `AFAM`, `AAM`, and `ASAM` for Achievement Medal; `AFCM`, `AFCOM`, and `ASCOM` for Commendation Medal; `MSM` for Meritorious Service Medal; and `AM` for Air Medal
 - Use factual, supportable, impact-driven language
 - Do not write the decoration as routine milestone recognition
 - Do not use unsupported superlatives, quotations, or flourish
@@ -26,11 +28,59 @@ This lane is assistive by default. Provide the specific decoration help requeste
 ## Evidence standard
 
 - Build the citation from source facts only
+- Full EPB or OPB statement sets covering the medal period are the preferred source input for decoration drafting
+- Ask for the EPB or OPB content in categorized form by report and ALQ section, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
 - Performance reports, prior drafts, and user-provided accomplishment notes may all be used if they are explicitly provided
+- Treat rough accomplishment bullets as fallback input only when the full EPB or OPB statement set is unavailable
+- When using the fallback path, ask for accomplishment statements with metrics and scope only; do not ask for rank, name, duty title, unit, base, location, or dates
+- If the user already identified the medal family, do not ask them to restate the exact medal label unless they indicate a different service or different medal family
 - If a required detail is missing, use a placeholder rather than fabricating
 - Quantify outcomes whenever the source supports exact values
 - Include at least 2 to 3 significant accomplishments when the length and decoration type allow it
 - Use the generic placeholder identity `SSgt Peter Snuffy` unless the user explicitly wants a different placeholder
+- If the user uses a service-specific medal label, translate it to the correct medal family first, then draft against the right opening and closing sentence pattern
+
+## Mandatory citation workflow
+
+Use this staged process for decoration citations. Do not skip the review gates unless the user explicitly tells you to.
+
+1. Request the necessary source input:
+   - ask for the full EPB or OPB statement sets covering the medal period
+   - ask for them in categorized form by report and ALQ section, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
+   - if the EPB or OPB source is unavailable, ask for accomplishment statements with supporting metrics or scope only
+   - do not ask for award period, rank, name, duty title, unit, strongest accomplishments, or citation-versus-justification choice during this default intake
+2. Split the provided material into numbered accomplishment splits and propose any valid consolidations or merges.
+3. Stop and get user feedback on the splits and proposed consolidations before ranking anything.
+4. Rank the final pool of approved consolidated accomplishments plus the remaining standalone accomplishments.
+5. Stop and get user feedback on final selection and ordering before drafting the citation.
+6. Build the citation only after both feedback steps are complete.
+
+When helping with a decoration citation, the default job is to guide the user through this workflow, not to jump directly to a finished draft.
+
+## Imported source guidance that applies across medals
+
+- Build a formal opening sentence tied to the member, role, organization, and any required intro details
+- Expand performance-report content into readable narrative prose instead of pasting statement text directly
+- Quantify achievements whenever possible with numbers, percentages, dollar values, or comparable measurable detail
+- Use strong action verbs
+- Avoid vague language and unsupported superlatives
+- Construct the citation with an opening sentence, narrative description, and closing sentence
+- Use the source-provided opening sentence model only when it still aligns with the correct medal-family rules
+- Construct a personalized closing sentence tied to the decoration
+- If the nominee is from another military department, identify the member's service branch when required
+- Use only authorized abbreviations and acronyms from the approved list
+- Do not include superfluous embellishments or quotations
+- Do not include classified information
+- Prepare a combined certificate and citation when the local package requires it
+- Bullets and performance statements should be numbered and highlighted only when the local package requires it
+- Operations should be in all caps when the approved format expects that treatment
+- Spell out all numbers `1` through `10` and common two-word numbers
+- If a sentence contains a related numeric series and any number in the series is `10` or more, express all numbers in that series as figures
+- Use the line transitions `During this period`, `Additionally`, `Moreover`, `Furthermore`, and `Finally` when the local reviewer expects them or when they improve flow without bloating the citation
+- If information is missing and cannot be derived from the provided source, use a placeholder instead of fabricating
+- Use spell-check and passive-voice review before delivery
+- Do not put periods after rank abbreviations
+- The system may allow `1350` characters, but the draft may still need trimming for auto-margin behavior
 
 ## Accomplishment selection
 
@@ -69,6 +119,83 @@ Every citation must contain at least one complete sentence in the narrative body
 ## What right looks like
 
 Use the approved decoration example data actively during each step of the workflow. Do not wait until the final draft to show the user what a strong result looks like.
+
+## Review templates
+
+Use these exact display patterns during the two mandatory review gates so the user always sees the same structure.
+
+### Review 1 template: splits and proposed consolidations
+
+Use this order:
+
+1. a short line stating that this is the split review
+2. a table with `Split #`, `Merged ID`, and `Split`
+3. a `Proposed Merges` section listing the rewritten merged accomplishments by merged ID
+4. a short `Review Needed` section asking which merges are valid, invalid, or missing
+
+Feedback rule:
+
+- the user should reference items by the first-column numbers in the table
+- do not ask the user to reply with split IDs or merged IDs during review
+- merged IDs still appear in the table for traceability, but feedback should key off the first-column numbers only
+
+Display pattern:
+
+Split Review
+
+| Split # | Merged ID | Split |
+|---|---|---|
+| 1 | M1 | [full split text] |
+| 2 | M1 | [full split text] |
+| 3 |  | [full split text] |
+| 4 | M2 | [full split text] |
+
+Proposed Merges
+
+- `M1` [rewritten merged accomplishment]
+- `M2` [rewritten merged accomplishment]
+
+Review Needed
+- Valid merges:
+- Invalid merges:
+- Missing merges:
+
+### Review 2 template: ranking and final citation order
+
+Use this order:
+
+1. a short line stating that this is the ranking review
+2. a ranking table with `Rank`, `Source`, and `Text`
+3. a separate short list showing the proposed citation body order
+4. a short request for feedback on final selection and order
+
+Feedback rule:
+
+- the user should reference items by the `Rank` number in the first column of the ranking table
+- do not ask the user to reply with source numbers or merge IDs during ranking review
+- the `Source` column remains for traceability only
+
+Display pattern:
+
+Ranking Review
+
+| Rank | Source | Text |
+|---|---|---|
+| 1 | M5 | [full text] |
+| 2 | 19 | [full text] |
+| 3 | 12 | [full text] |
+
+Proposed Citation Order
+1. M5
+2. 19
+3. 12
+4. 18
+5. M2
+
+Review Needed
+- Final items:
+- Final order:
+- Drop before drafting:
 
 ### Split example
 
@@ -130,9 +257,19 @@ Use this worked example to reinforce the following:
 
 ## Delivery model
 
+- When the user asks for a decoration draft, default to building a citation
 - When the user asks for a decoration draft, provide the full paragraph-style citation content they need
+- Present decoration citation drafts as normal paragraph text, not inside code blocks
 - Do not default to one-line fragments or statement variations unless the user explicitly asks for that kind of help
 - During step-by-step work, use the approved decoration examples to show what a strong split, consolidation, ranking choice, or citation line looks like
+- When decoration source material is needed, ask for the full EPB or OPB statements for the medal period before asking for rough bullets
+- Ask for that source material in categorized `EPB1` / `E-L-M-I-H` form by default
+- If the EPB or OPB source is unavailable, ask for accomplishment statements plus metrics or scope only, without metadata
+- Do not ask the user to pre-rank the strongest accomplishments; do that work inside the decoration workflow
+- Do not ask the user for period, role, unit, rank, name, strongest accomplishments, or citation-versus-justification choice during default decoration intake
+- Treat the split and consolidation review step as mandatory before ranking
+- Treat the ranking and final-selection review step as mandatory before drafting
+- Do not ask for the period, role, unit, basis, or other metadata-dependent pieces unless the user explicitly asks to work on them
 
 Use `decoration-examples.md` as a structure and density reference, then validate the final draft against current medal-specific rules.
 Use `decoration-ranking.md` when choosing which accomplishments belong in the citation.
@@ -151,25 +288,18 @@ Use `decoration-ranking.md` when choosing which accomplishments belong in the ci
 ## Decoration-specific validation
 
 - Confirm the basis is correct: achievement, meritorious service, retirement, PCS, or other approved basis
-- Confirm the opening sentence matches the specific decoration
-- Confirm the closing sentence matches the specific decoration and basis
+- Confirm the opening sentence matches the selected medal family and service-specific format
+- Confirm the closing sentence matches the selected medal family and basis
 - Confirm any consolidation is stronger than the original standalone items and does not double-count facts
 - Confirm rolled-up source facts stay rolled up when they are stronger that way
 - Confirm critical qualifiers, such as `outside his career field`, are preserved
 - Confirm additional-duty content has not displaced stronger primary-duty material
 - Confirm the period does not duplicate another decoration
-- Confirm the justification does not simply recycle the same act or period already recognized elsewhere
+- Confirm the citation does not simply recycle the same act or period already recognized elsewhere
 - Confirm spelling, grammar, no-unnecessary-abbreviation compliance, and exact character or line limits before final delivery
 
 ## Formatting reminders
 
-- `AFAM`, `AFCM`, and `MSM` use `Courier New` `11`
+- Medal citations in this skill use `Courier New` `11`
 - Character-limited citations must be counted exactly, including spaces
 - Auto-formatting margins may force trimming even when the raw system count appears compliant
-
-## Source-derived preferences retained from the custom decorations guidance
-
-- Run spell-check before delivery
-- Check for passive voice and tighten where it weakens the citation
-- Use placeholders like `(insert your information here)` when a mandatory fact is missing
-- Preserve line-by-line narrative transitions only when the local package or reviewer expects them

@@ -8,8 +8,6 @@ Use this checklist selectively before drafting. Missing facts are the main reaso
 - Default placeholder identity: `SSgt Peter Snuffy`
 - Award type or report type
 - Basis or reason if applicable: annual, PCS, PCA, retirement, separation, achievement, meritorious service, heroism
-- Inclusive period or closeout period
-- Suspense
 - Hard limits: characters, lines, blocks, or section constraints
 - Local template, example, or scoring sheet if the unit uses one
 - Whether the member served in a joint organization
@@ -65,13 +63,20 @@ For each accomplishment, gather:
 ### Decorations
 
 - Confirm the decoration basis is appropriate and not routine milestone recognition
-- Confirm the period does not duplicate another decoration
 - Confirm opening and closing language matches the award type
-- Confirm citation and justification limits before finalizing
+- Confirm citation limits before finalizing
 - Confirm which source documents are authorized for use
+- For decoration drafting, ask for the full EPB or OPB statement set covering the medal period as the default source input
+- Use rough bullets only as fallback when the full EPB or OPB statement set is unavailable
+- Ask for the EPB or OPB content in categorized form, grouped by report, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
 - Confirm whether the reviewer expects line-by-line narrative transitions
 - Confirm whether the package needs a combined certificate and citation
 - Confirm whether missing required facts should remain as placeholders
+- Do not ask for real personal header data unless the user explicitly wants to fill the intro line now
+- Do not ask for duty title or unit as default intake; use the placeholder intro format unless the user specifically wants the intro completed
+- Do not ask for the period as default intake when the user is asking for a citation draft from EPB or OPB content
+- Do not ask the user to pre-rank the strongest accomplishments; the skill should split, consolidate, and rank them itself
+- Do not ask whether the user wants something other than a citation; the decoration lane should default to citation drafting unless the user explicitly asks for a different decoration product
 
 ## If details are missing
 
@@ -85,10 +90,58 @@ Use short placeholders instead of fabricating:
 
 ## Fast intake prompt
 
-Ask the user only for what the requested piece requires. Typical prompt:
+Ask the user only for what the requested piece requires. Do not reuse a generic full-package intake when the request is lane-specific.
 
-1. Document type, award or report type, and period
-2. Core duties, additional duties, and top 3 to 5 accomplishments
-3. Metrics for each accomplishment
-4. Any local template, line limit, character limit, or sample package
-5. Any required comments or special constraints
+For decoration citation help, use this exact default intake approach:
+
+1. ask only for the full EPB or OPB statements covering the medal period
+2. ask for them in categorized form by report and ALQ section
+3. ask for supporting metrics, local line or character limits, or required transitions only if the user already mentioned them or the source statements clearly need clarification
+4. if the EPB or OPB source is unavailable, ask only for accomplishment statements with metrics and scope, not metadata
+
+Preferred decoration intake format:
+
+EPB1:
+E:
+- statement
+L:
+- statement
+M:
+- statement
+I:
+- statement
+H:
+- statement
+
+EPB2:
+E:
+- statement
+L:
+- statement
+M:
+- statement
+I:
+- statement
+H:
+- statement
+
+If EPB or OPB source is unavailable, use this fallback format instead:
+
+1. Accomplishment statement:
+   Metrics or measurable result:
+2. Accomplishment statement:
+   Metrics or measurable result:
+3. Accomplishment statement:
+   Metrics or measurable result:
+
+For decoration citation help, do not ask for:
+
+- exact medal label beyond the medal family already given by the user
+- award period
+- rank or full name
+- duty title or unit
+- strongest accomplishments
+- rough bullets as the primary input format
+- citation versus justification choice
+
+Only ask for those items later if the user explicitly wants help completing intro metadata or if the EPB or OPB source is unavailable.

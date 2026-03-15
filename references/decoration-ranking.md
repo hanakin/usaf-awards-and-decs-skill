@@ -1,6 +1,6 @@
 # Decoration Accomplishment Ranking
 
-Use this reference before drafting a decoration citation body. Do not pick accomplishments by intuition alone. Split the source statements into individual accomplishments first, consolidate explicitly related items second, then rank the consolidated accomplishment groups before building the citation.
+Use this reference before drafting a decoration citation body. Do not pick accomplishments by intuition alone. Split the source statements into individual accomplishments first, consolidate explicitly related items second, stop for review, then rank the approved consolidated and remaining standalone accomplishments before building the citation.
 
 ## Purpose
 
@@ -26,7 +26,7 @@ Use this reference before drafting a decoration citation body. Do not pick accom
   - if the ALQ entry contains 4 sentences, treat the first 2 sentences as 1 accomplishment and the second 2 sentences as 1 accomplishment
 - For `H`, always keep the full entry as 1 accomplishment
 - Consolidate similar accomplishments into grouped accomplishment clusters
-- Rank the consolidated accomplishment clusters, not the original statement shell and not the raw unsorted split list
+- Rank the approved consolidated accomplishment clusters together with the remaining approved standalone splits, not the original statement shell and not the raw unsorted split list
 
 ## HLR rule
 
@@ -162,7 +162,7 @@ Mission effect and quantified evidence should decide most ties. `HLR` should hel
 
 ## Selection rules
 
-- For `AFCM`, prefer sustained, mission-relevant accomplishments with strong operational or enterprise consequence
+- For Commendation Medal citations, prefer sustained, mission-relevant accomplishments with strong operational or enterprise consequence
 - Prefer primary-duty accomplishments over additional-duty content
 - Do not use additional-duty content in the citation body unless it clearly carries decoration-level significance and the user wants it included
 - Treat `As [duty title]` phrasing as a likely additional-duty or secondary-duty warning flag unless the user confirms it is core primary-duty work
@@ -183,24 +183,81 @@ After ranking:
 - for a 5-accomplishment citation body, open with the strongest primary-duty mission-impact accomplishment
 - place the strongest overall accomplishment last in the body
 - use the middle accomplishment lines to build upward in scope
-- prefer a Wing to Air Force to Department of Defense rise in the back half when the facts support that progression
+- prefer a Wing to Air Force to Department of War rise in the back half when the facts support that progression
 - preserve the strongest metrics from each selected item
 - cut lower-ranked items before cutting decisive metrics from higher-ranked items
 - write from the highest-ranked consolidated groups instead of trying to force every raw accomplishment into the citation
 - rewrite the consolidated group into a stronger accomplishment statement before ranking or drafting
 
+Do not build the citation until the user has reviewed the ranking output and confirmed the final selection and order.
+
 ## Output format for ranking help
 
-When the user asks for help choosing accomplishments for a decoration, provide:
+When the user asks for help choosing accomplishments for a decoration, use this two-pass review process.
 
-1. the split accomplishment list
-2. the recommended consolidation groups
-3. the ranked consolidated accomplishment clusters
-4. the top 2 to 4 accomplishment clusters you recommend carrying into the citation
+First pass:
+
+1. the split accomplishment list with stable IDs
+2. the proposed consolidation groups with stable IDs
+3. a request for user review and feedback on the splits and proposed consolidations
+
+Use this exact display template:
+
+Split Review
+
+| Split # | Merged ID | Split |
+|---|---|---|
+| 1 | M1 | [full split text] |
+| 2 | M1 | [full split text] |
+| 3 |  | [full split text] |
+| 4 | M2 | [full split text] |
+
+Proposed Merges
+- `M1` [rewritten merged accomplishment]
+- `M2` [rewritten merged accomplishment]
+
+Review Needed
+- Valid merges:
+- Invalid merges:
+- Missing merges:
+
+For feedback on this table, the user should always reply using the first-column numbers, not the `Merged ID` values.
+
+Second pass, only after that feedback:
+
+1. the ranked final pool, including approved consolidated items and remaining standalone splits
+2. the recommended accomplishment order to carry into the citation
+3. a request for user review and feedback on final selection and ordering
+
+Use this exact display template:
+
+Ranking Review
+
+| Rank | Source | Text |
+|---|---|---|
+| 1 | M5 | [full text] |
+| 2 | 19 | [full text] |
+| 3 | 12 | [full text] |
+
+Proposed Citation Order
+1. M5
+2. 19
+3. 12
+4. 18
+5. M2
+
+Review Needed
+- Final items:
+- Final order:
+- Drop before drafting:
+
+For feedback on this table, the user should always reply using the `Rank` numbers in the first column, not the `Source` values.
+
+Only after the second review step is complete should the citation be drafted.
 
 When showing split accomplishments for ranking, normalize them into clean standalone text rather than preserving paragraph transitions from the source.
 At each step, provide a short example from the approved example set or a short modeled example based on that set to show what a good split, good consolidation, or good ranking target looks like.
-When showing rankings, use a table with a `Rank` column and an `IDs` column.
+When showing rankings, use a table with a `Rank` column, a `Source` column, and a `Text` column.
 
 ## What right looks like
 
@@ -223,6 +280,7 @@ Why this is right:
 - transition filler is removed
 - shorthand is normalized into clean standalone text
 - the strongest measurable facts are preserved
+- the historical source wording is normalized into current `Department of War` language for new writing
 
 ### Consolidation example
 

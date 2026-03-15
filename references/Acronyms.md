@@ -32,6 +32,10 @@ Examples the skill should treat as category-approved additions:
 - Unit shorthand such as `Sq`, `Flt`, `Gp`, and `Wg`
 - Common enlisted and officer rank abbreviations such as `Amn`, `A1C`, `SrA`, `SSgt`, `TSgt`, `MSgt`, `SMSgt`, `CMSgt`, `2Lt`, `1Lt`, `Capt`, `Maj`, `Lt Col`, `Col`, and `Gen`
 - Common office symbols and major organization shorthand such as `CC`, `CMSAF`, and `STRATCOM`
+- Position abbreviations such as `NCOIC` and `OIC`
+- Legacy and current department terms such as `SecDef`, `SecWar`, `DoD`, and `DoW`
+- Organization abbreviations such as `ACC`, `CCMD`, `COCOM`, `USCYBERCOM`, `AF`, `IG`, `TF`, `CNMF`, `HAF`, and `CSS`
+- Job-function and AFSC-style codes such as `1N8`
 
 ## Source of truth
 

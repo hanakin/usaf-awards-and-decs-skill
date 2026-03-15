@@ -77,6 +77,34 @@ def is_allowed(token: str, allowlist: set[str]) -> bool:
     return any(pattern.match(token) for pattern in CATEGORY_PATTERNS)
 
 
+def split_subtokens(token: str) -> list[str]:
+    """Split a token into acronym-relevant parts.
+
+    Hyphenated forms often combine a valid acronym with a normal word or number,
+    such as ``DoW-wide`` or ``25-Amn``. Validate the meaningful parts rather
+    than treating the whole hyphenated string as a single acronym token.
+    """
+    parts = re.split(r"[-/]", token)
+    return [part for part in parts if part]
+
+
+def normalize_token(token: str, allowlist: set[str]) -> str:
+    """Normalize simple plural acronym forms to their singular base.
+
+    Examples:
+    - ``CFETPs`` -> ``CFETP``
+    - ``LOEs`` -> ``LOE``
+    - ``NCOs`` -> ``NCO``
+
+    Only strip a trailing ``s`` when the singular form is already recognized.
+    """
+    if len(token) > 2 and token.endswith(("s", "S")):
+        base = token[:-1]
+        if is_allowed(base, allowlist):
+            return base
+    return token
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Validate acronym-like tokens against the USAF skill allowlist."
@@ -104,15 +132,19 @@ def main() -> int:
 
     for match in TOKEN_RE.finditer(text):
         token = match.group(0)
-        if not HAS_UPPER_RE.search(token):
-            continue
-        if TITLECASE_WORD_RE.match(token) and token not in CATEGORY_EXACT:
-            continue
-        if token in seen:
-            continue
-        seen.append(token)
-        if not is_allowed(token, allowlist):
-            flagged.append(token)
+        for subtoken in split_subtokens(token):
+            subtoken = normalize_token(subtoken, allowlist)
+            if len(subtoken) == 1 and subtoken.isalpha():
+                continue
+            if not HAS_UPPER_RE.search(subtoken):
+                continue
+            if TITLECASE_WORD_RE.match(subtoken) and subtoken not in CATEGORY_EXACT:
+                continue
+            if subtoken in seen:
+                continue
+            seen.append(subtoken)
+            if not is_allowed(subtoken, allowlist):
+                flagged.append(subtoken)
 
     if not flagged:
         print("No questionable acronym-like tokens found.")

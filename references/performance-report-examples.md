@@ -8,7 +8,7 @@ Use them to reason about category fit, push style, compression, and acceptable v
 
 ## Duty Description
 
-- As Out of Access NCOIC, TSgt Snuffy inprocesses & oversees Airmen awaiting clearances, coordinates Sq events, & manages accountability and development of 25 flight members. He is also responsible for the Sq IQT planning team for 8 work roles & managing a training pipeline for out-of-access airmen in support of the Sq stan eval mission. 1N8 lead for 5-member exercise planning team that coordinates with HHQ to meet ACC & CCMD readiness requirements.
+- As Out of Access NCOIC, TSgt Snuffy inprocesses & oversees Airmen awaiting clearances, coordinates Sq events, & manages accountability and development of 25 Flt members. He is also responsible for the Sq IQT planning team for 8 work roles & managing a training pipeline for out-of-access airmen in support of the Sq stan eval mission. 1N8 lead for 5-member exercise planning team that coordinates with HHQ to meet ACC & CCMD readiness requirements.
 
 - As Joint Targeting Lead TSgt Snuffy fills an 0-3 OIC billet managing all target nominations and development for a 131-member task force, ensuring approval of all targets to USCYBERCOM and DoD requirements. He serves as the Air Force functional manager for targeting, advising GP leaders and mentoring 5 target analysts across 7 USCYBERCOM organizations. Additionally, as Deputy Flight Chief, he administers and mentors the largest flight in the SQ.
 

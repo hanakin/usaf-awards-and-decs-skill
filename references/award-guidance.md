@@ -1,4 +1,4 @@
-# AF Form 1206 Guidance
+# Award Guidance
 
 Use this reference for `AF Form 1206` work after reading `statement-shared.md`.
 
@@ -29,7 +29,7 @@ Always identify which format is required before drafting.
 - Preserve strong accomplishment ordering and board readability even when working in paragraph form
 - Match the required total line count for the specific award or template
 
-## 1206-specific behavior
+## Award-specific behavior
 
 - Lead with the strongest mission-relevant accomplishment
 - Keep the action, impact, and result chain obvious

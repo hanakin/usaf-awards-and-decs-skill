@@ -40,7 +40,7 @@ Performance-report length rule:
 
 ## Medal citation
 
-Use for achievement, commendation, meritorious service decorations for recognition when the user asks for citation language.
+Use for Achievement Medal, Commendation Medal, Meritorious Service Medal, or Air Medal citations when the user asks for decoration language.
 
 Recommended structure:
 
@@ -49,14 +49,14 @@ Recommended structure:
 - Award-specific closing sentence
 
 Keep the tone formal and citation-ready. Favor polished narrative over board-style shorthand.
+Present the citation as normal paragraph text, not inside a code block.
 
 Policy anchors:
 
 - `DAFMAN 36-2806` Attachment 5 for citation structure, opening sentences, closing sentences, fonts, and limits
 - `DAFI 36-2803` for appropriateness, duplicate recognition, and governance
 - `AFH 33-337` for sentence clarity, punctuation, capitalization, abbreviations, and numbers
-- `decoration-guidance.md` for integrated decoration drafting and validation behavior
-- `ascom-guidance.md` for Air Force Commendation Medal (`AFCM`) handling in this skill's current medal set
+- `decoration-guidance.md` for integrated decoration drafting, medal-family translation, and validation behavior
 
 Critical rules:
 
@@ -64,6 +64,8 @@ Critical rules:
 - Do not use unsupported stratification or promotion-style language
 - Check award-specific limits before finalizing
 - Use placeholders instead of fabricating missing required facts
+- Default to placeholder intro text unless the user explicitly wants the intro line completed
+- Do not ask for real header data, duty title, unit, or dates by default when the user is only asking for citation drafting help
 - Run spelling and grammar review before final delivery
 - Spell terms out in decoration prose; do not rely on abbreviations or acronyms
 - When the required local format uses 7 lines, treat line 1 as the intro, lines 2 through 6 as accomplishment lines, and line 7 as the closing
@@ -74,7 +76,7 @@ Critical rules:
 
 This is the default meaning of `awards` in this skill unless the user clearly means a medal or decoration.
 
-Use when the package needs either statement-style or paragraph-style award justification.
+Use when the package needs either statement-style or paragraph-style award content.
 
 Default to statement format unless the user or template explicitly requires paragraph format.
 
@@ -98,7 +100,7 @@ Policy anchors:
 - `AFH 33-337` chapter 19 for bullet construction and polish
 - `Acronyms.md` and validator rules for abbreviation control
 - `statement-shared.md` for common statement construction rules
-- `1206-guidance.md` for `AF Form 1206`-specific hard limits, review flow, and examples
+- `award-guidance.md` for award-package hard limits, review flow, and examples
 - Unit template or scoring model when provided
 
 Current length rule:
