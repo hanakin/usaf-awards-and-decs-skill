@@ -61,6 +61,10 @@ Apply splitting in this order.
 - Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
 - Do not use weak opener repairs like `This`, `That`, or `These` for a second split
 - Strip transition-only intros like `Also` and `Additionally`
+- Remove leftover filler words like `also` when they remain after the repaired opener, for example change `He is also sponsoring...` to `He is sponsoring...`
+- When low-quality source wording directly interferes with a clean edge-case split, the agent may remove or correct that wording with the minimum necessary change
+- This may include removing filler or distracting words like `all`, `directly`, or similar weak modifiers when they distort the actual accomplishment boundary
+- If the agent removes or corrects wording for that reason, it must tell the user exactly what changed and why
 - The agent is responsible for these opener repairs when resolving flagged edge cases
 
 ### 7. Reject invalid split behavior
