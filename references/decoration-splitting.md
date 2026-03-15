@@ -25,8 +25,8 @@ Apply splitting in this order.
 - Do not use this rule for entries that already contain 2 or 4 sentences
 - Use meaning, not trigger words, to identify the break
 - If the downstream effect is grammatically attached to the first clause but functionally describes a separate accomplishment or result, still split it
-- Keep the setup, training, certification, or action cluster together in split `1`
-- Move the distinct downstream effect, operational result, reporting result, recognition, or follow-on accomplishment into split `2`
+- Keep the first accomplishment together in split `1`
+- Move the second distinct accomplishment, result, recognition, or follow-on effect into split `2`
 
 ### 4. Apply the normal sentence-count rule
 
@@ -44,6 +44,7 @@ Apply splitting in this order.
 - Do not rewrite split review text into citation prose
 - Preserve source numbers, acronyms, abbreviations, and shorthand
 - Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
+- Do not use weak opener repairs like `This`, `That`, or `These` for a second split
 - Strip transition-only intros like `Also` and `Additionally`
 
 ### 7. Reject invalid split behavior
