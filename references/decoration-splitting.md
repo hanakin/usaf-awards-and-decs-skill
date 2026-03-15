@@ -17,6 +17,8 @@ Apply splitting in this order.
 - Do not count sentences for `H`
 - Do not apply edge-case rules to `H`
 - If an `H` entry is shown as more than 1 split item, treat that as invalid output and correct it before proceeding
+- In the split-review table, one `H` source entry may appear only once
+- If one `H` source entry shows up as two numbered rows, that output is invalid and must be rebuilt
 
 ### 3. Check for the single-sentence run-on exception
 
@@ -52,6 +54,25 @@ Apply splitting in this order.
 - Never split at the clause, phrase, semicolon, or metric level
 - Never split one sentence into multiple mini-actions, except for the approved run-on edge case above
 - Never split a 4-sentence accomplishment into more than 2 split items
+- Never show one `H` source entry as more than one numbered split row
+
+### 8. Validate the split count before review
+
+- Check the final split-review table against the source-entry count before presenting it
+- Use this equation:
+  - expected split rows per EPB = (`E` x `2`) + (`L` x `2`) + (`M` x `2`) + (`I` x `2`) + (`H` x `1`)
+  - total expected split rows = the sum of the expected split rows for every EPB included in the medal period
+- This is a fixed-count check:
+  - every `E`, `L`, `M`, and `I` source entry should produce `2` split rows
+  - every `H` source entry should produce `1` split row
+- The normal split rule, 4-sentence edge case, and single-sentence run-on rule only change how the `2` rows are formed for `E`, `L`, `M`, and `I`
+- They do not change the expected row count
+- If the split-review table row count does not match this equation, the split output is invalid and must be corrected before review
+- If any `E`, `L`, `M`, or `I` source entry produces anything other than `2` split rows, the split output is invalid
+- If any `H` source entry produces anything other than `1` split row, the split output is invalid
+- If the total split-table math fails, stop and loop back to the split step before showing the table
+- If any individual source entry fails its required count, stop and loop back to re-split that entry before showing the table
+- Do not proceed to merge review until both the total count check and the per-entry count checks pass
 
 ## Split review template
 

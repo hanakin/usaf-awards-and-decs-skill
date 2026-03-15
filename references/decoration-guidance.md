@@ -99,6 +99,7 @@ Use those stage files as the authoritative detailed instructions. Do not restate
 
 - `H` never splits
 - split review happens before merge approval
+- split-count validation happens before split review is shown
 - merge approval happens before ranking
 - ranking review happens before drafting
 - the user's approved final order controls the draft order
