@@ -88,11 +88,14 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Treat the split table as a mechanical review artifact, not as the merge-candidate definition of the work.
 - Consolidation means combining distinct source accomplishments that are explicitly part of the same broader contribution; it never means restoring the 2 required split rows from the same original EPB entry back into 1 row.
 - Start merge review by grouping splits into a broad category and a specific working bucket inferred from the source text. Common broad categories include mission, exercise, admin, and volunteer, but those are not a closed list.
+- Keep the specific working bucket short and generic. Use 1 to 2 words only and avoid proper nouns or long source-derived labels.
 - Use that grouping to surface likely merge candidates first, then test whether the source actually supports the merge.
 - If 2 items came from the same original statement, treat that as a warning sign and usually do not merge them, but do not treat it as an absolute bar if the source still supports 1 broader contribution.
 - Do not propose a merge based only on broad theme overlap such as training, readiness, production, leadership, volunteerism, or impact; require explicit source linkage or a clearly inherent sustained effort.
 - Before proposing any merge, apply this proof test: the merged accomplishment must still read as one coherent broader contribution without adding connective assumptions that are not already supported by the source text.
 - Preserve the strongest source numbers, scale, and rolled-up math in any proposed merge. If the merge drops or weakens the core math, it is a bad merge.
+- When a merge combines repeated actions of the same type, actually combine them into one broader accomplishment instead of writing a chained `did X, later did Y` sentence.
+- If a simple numeric roll-up is obvious and fully supported by the source, do the math in the merged line instead of forcing the reader to add it mentally.
 - If explicit linkage is not clear from the source text after the grouping pass, default to no merge.
 - The split-review step must use the exact split-review table from `decoration-splitting.md`; do not replace it with prose lists, alternate headers, likely-cut notes, or ranking commentary.
 - If the split count math or split-review format is wrong, loop back and rebuild the split stage before showing it to the user.

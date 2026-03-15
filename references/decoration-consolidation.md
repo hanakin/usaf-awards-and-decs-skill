@@ -27,7 +27,36 @@ If a split clearly fits a different broad category, infer it from the source tex
 
 The specific working bucket is also inferred from the source text.
 It is not a fixed approved list.
-Use it to surface likely merge candidates before applying the proof test.
+Keep that specific bucket generic:
+
+- use 1 to 2 words only
+- do not use proper nouns
+- do not repeat long source phrasing
+- use the simplest generic label that still surfaces likely merge candidates
+
+Examples of acceptable specific buckets:
+
+- production
+- qualification
+- trainer
+- general
+
+Examples of unacceptable specific buckets:
+
+- Red Flag real-time intel support
+- analyst evaluation and exercise feedback
+- UNITE fund programming and unit cohesion
+- STORMFORCE electronic warfare support
+
+Use the broad category and the specific working bucket only to surface likely merge candidates before applying the proof test.
+They are routing aids, not final writing.
+
+When choosing the broad category:
+
+- prefer the most operationally controlling frame
+- if the accomplishment is tied to an exercise, `exercise` usually outranks another possible broad category
+- if the accomplishment is primarily a volunteer, morale, or outreach item, do not force it into `mission`
+- if the accomplishment is a secondary duty that directly enables mission execution, `mission` may still be the better broad category than `admin`
 
 Good consolidation candidates are:
 
@@ -58,6 +87,9 @@ Use this proof test before proposing a merge:
 Category overlap helps surface candidates.
 It does not prove the merge is valid by itself.
 
+The broad category and specific working bucket should make the merge pass less restrictive, not more restrictive.
+If the buckets are so narrow, specific, or proper-noun-heavy that every item becomes its own category, regroup them more generically and check again.
+
 Do not consolidate items that are only thematically similar.
 Do not consolidate items that would make the final citation sentence confusing or bloated.
 Do not simply stack the original statements together and call that consolidation.
@@ -74,13 +106,21 @@ Do not skip the merge check just because the split table already looks complete.
 4. pull out the most important facts from each source accomplishment
 5. keep the strongest metrics, scale, consequence, and rolled-up math
 6. remove duplicate setup language
-7. rewrite the material into one stronger accomplishment statement
+7. combine related repeated actions into one broader accomplishment when the source supports that roll-up
+8. rewrite the material into one stronger accomplishment statement
 
 ## Review-stage wording rule
 
 - Preserve source wording as much as possible during merge review
 - Do not rewrite merge-review text into final citation prose
 - Preserve source numbers, acronyms, abbreviations, and shorthand where possible
+- When the source supports it, combine repeated actions into a rolled-up description instead of listing them one after another
+- If 2 source items describe the same kind of training, instruction, production, or support event, rewrite them as one broader combined accomplishment instead of a chained `did X, later did Y` sentence
+- Preserve the math when combining items
+- If a simple roll-up is supported by the source, do the math instead of forcing the reader to do it
+- Use simple arithmetic roll-ups when they are obvious and defensible from the source
+- For time, convert hours to days only when the conversion is simple and clearly helpful to the merge, using an 8-hour workday for the roll-up
+- If exact roll-up is not cleanly supported, keep the original figures instead of inventing a cleaner number
 
 ## Consolidation validation
 
@@ -93,6 +133,8 @@ Before accepting a merged accomplishment, verify:
 - no critical qualifier was dropped
 - no unrelated event was pulled in just because it sounded similar
 - the final rewritten accomplishment still reads as one coherent accomplishment
+- repeated actions were actually combined instead of merely chained together
+- the rewritten line does not force the reader to add the source numbers mentally when the roll-up was simple enough to show directly
 
 ## Invalid merge examples
 
@@ -100,17 +142,18 @@ Before accepting a merged accomplishment, verify:
 - invalid: analytic production plus Tactical Combat Casualty Care instruction just because both are strong and citation space is limited
 - invalid: 2 unrelated training items merged only because both improve readiness
 - invalid: 2 unrelated intelligence products merged only because both involve reporting or production
+- invalid: `instructed 17 hrs ... later taught ... and led ...` when those related training events could have been rewritten into one cleaner combined training accomplishment
 
 ## Worked example
 
 Source accomplishments:
 
-- Split `7` (`I23`): `TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoD joint staff as "most detailed ever".`
-- Split `16` (`I24`): `TSgt Snuffy participated in 2 DoD Joint Staff development initiatives to re-design the tool of record for targeting. His expertise and knowledge was lauded as best feedback they have ever received.`
+- Split `7` (`I23`): `TSgt Snuffy was by name requested to coordinate with DoW targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoW joint staff as "most detailed ever".`
+- Split `16` (`I24`): `TSgt Snuffy participated in 2 DoW Joint Staff development initiatives to re-design the tool of record for targeting. His expertise and knowledge was lauded as best feedback they have ever received.`
 
 Proposed merge:
 
-- `M2`: `TSgt Snuffy supported 3 DoD targeting-tool modernization events, helped drive a $41.5M upgrade to a 25-yr old app, and delivered feedback lauded by joint staff as the strongest ever.`
+- `M2`: `TSgt Snuffy supported 3 DoW targeting-tool modernization events, helped drive a $41.5M upgrade to a 25-yr old app, and delivered feedback lauded by joint staff as the strongest ever.`
 
 Why this works:
 
