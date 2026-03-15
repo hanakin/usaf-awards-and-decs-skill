@@ -84,34 +84,75 @@ When helping with a decoration citation, the default job is to guide the user th
 - Do not put periods after rank abbreviations
 - The system may allow `1350` characters, but the draft may still need trimming for auto-margin behavior
 
-## Accomplishment selection
+## Stage references
 
-- Split EPB or OPB source material in this order:
-  - first, check for the run-on edge case before counting sentences
-  - second, if it is not a run-on edge case, count sentences and apply the normal split rules
-  - `E`, `L`, `M`, and `I` may produce 2 split items depending on whether the entry contains 2 or 4 sentences
-  - if the entry contains 2 sentences, split sentence `1` into split `1` and sentence `2` into split `2`
-  - if the entry contains 4 sentences, split sentences `1+2` into split `1` and sentences `3+4` into split `2`
-  - `H` always stays whole as 1 accomplishment with no splitting
+Use the stage-specific files for the detailed rules at each point in the workflow:
+
+- `decoration-intake.md` for the exact first response and fallback intake
+- `decoration-splitting.md` for split logic and split-review display
+- `decoration-consolidation.md` for merge logic and merge-review expectations
+- `decoration-ranking.md` for ranking logic and ranking-review display
+- `decoration-drafting.md` for citation drafting, order, and final validation
+
+## Splitting rules
+
+Apply splitting in this order.
+
+### 1. Identify the ALQ type
+
+- `E`, `L`, `M`, and `I` may split
+- `H` does not split
+
+### 2. Hard stop for `H`
+
+- `H` always stays whole as 1 accomplishment with no splitting
 - Do not count sentences for `H`
 - Do not apply the edge-case split rule to `H`
 - If an `H` entry is shown as more than 1 split item, treat that as invalid output and correct it before proceeding
-- Edge-case handling:
-  - if a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
-  - use this edge case only when the normal `1+2` and `3+4` split would break the meaning
-- Run-on handling:
-  - if the source uses one run-on sentence but clearly contains two accomplishments, treat that check before sentence counting and normalize it into 2 sentence-level split items before review
-  - use this only when the source clearly contains a natural break between one accomplishment and a separate result or follow-on accomplishment
-  - do not preserve the run-on structure if doing so would block correct splitting
-- For split and merge review, preserve the source wording as much as possible
-- Do not rewrite split or merged review text into citation prose
-- Preserve the source numbers, acronyms, abbreviations, and shorthand during split and merge review
+
+### 3. Check for the single-sentence run-on exception
+
+- Use this check before sentence counting
+- If the source uses a single run-on sentence but clearly contains two accomplishments, normalize it into 2 sentence-level split items before review
+- Do not use this rule for entries that already contain 2 or 4 sentences; use the normal sentence-count rules for those
+- Use this only when the source clearly contains a natural break between one accomplishment and a separate result or follow-on accomplishment
+- Use meaning, not trigger words, to identify the break
+
+### 4. Apply the normal sentence-count rule
+
+- If the entry contains 2 sentences, split sentence `1` into split `1` and sentence `2` into split `2`
+- If the entry contains 4 sentences, split sentences `1+2` into split `1` and sentences `3+4` into split `2`
+
+### 5. Check for the 4-sentence edge case
+
+- If a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
+- Use this edge case only when the normal `1+2` and `3+4` split would break the meaning
+
+### 6. Preserve wording during split review
+
+- Preserve the source wording as much as possible
+- Do not rewrite split review text into citation prose
+- Preserve the source numbers, acronyms, abbreviations, and shorthand during split review
 - Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
+- Strip transition-only intros like `Also` and `Additionally` from split accomplishments; restore transitions only later if needed for final citation flow
+
+### 7. Reject invalid split behavior
+
 - Never split an accomplishment at the clause, phrase, semicolon, or metric level
 - Never split one sentence into multiple mini-actions, except for the approved run-on edge case above
 - Never split a 4-sentence accomplishment into more than 2 split items
-- Strip transition-only intros like `Also` and `Additionally` from split accomplishments; restore transitions only later if needed for final citation flow
+
+## Consolidation rules
+
 - Consolidate only explicitly related accomplishments second so the citation captures more content with less repetition
+- For merge review, preserve the source wording as much as possible until final citation drafting
+- Do not rewrite merged review text into full citation prose
+- Rewrite consolidated groups into stronger accomplishment statements rather than listing the original statements side by side
+- Preserve critical source qualifiers during consolidation, such as work performed outside the member's career field
+- Preserve stronger rolled-up source facts, such as `three events`, instead of splitting them back into weaker subcounts
+
+## Ranking and selection
+
 - Rank the consolidated accomplishment groups before drafting the citation body
 - Use `decoration-ranking.md` instead of intuition-only selection
 - Focus ranking on primary-duty accomplishments first
@@ -119,9 +160,6 @@ When helping with a decoration citation, the default job is to guide the user th
 - Preserve the strongest metrics, scale, and mission effects from the top-ranked items
 - Do not replace decisive quantified impact with generic summary language
 - Use lower-ranked items only when they add breadth that the top items do not already cover
-- Rewrite consolidated groups into stronger accomplishment statements rather than listing the original statements side by side
-- Preserve critical source qualifiers during consolidation, such as work performed outside the member's career field
-- Preserve stronger rolled-up source facts, such as `three events`, instead of splitting them back into weaker subcounts
 
 ## Citation flow
 

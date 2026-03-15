@@ -20,7 +20,7 @@ This skill is assistive and incremental by default. Do not assume the user wants
 ## Workflow
 
 1. Identify the specific help requested. Determine whether the user wants a duty description, one performance statement, ALQ-category help, one `AF Form 1206` statement, a full `1206` paragraph, a decoration citation, or some other discrete piece.
-2. Collect only the facts needed for that requested piece. Use [references/intake-checklist.md](references/intake-checklist.md) selectively instead of treating it like a mandatory full-package intake. Do not ask for real personal header data; use the generic placeholder identity `SSgt Peter Snuffy` unless the user explicitly wants a different placeholder.
+2. Collect only the facts needed for that requested piece. Use [references/intake-checklist.md](references/intake-checklist.md) only as a lane router, then follow the lane-specific intake file. Do not ask for real personal header data; use the generic placeholder identity `SSgt Peter Snuffy` unless the user explicitly wants a different placeholder.
 3. Confirm the governing source before writing. Use current guidance and templates as the controlling standard for format-specific behavior when they conflict with older baseline policy. Use [references/AFH 33-337/index.md](references/AFH%2033-337/index.md), [references/DAFPD 36-28.md](references/DAFPD%2036-28.md), [references/DAFI 36-2803.md](references/DAFI%2036-2803.md), [references/DAFMAN 36-2806.md](references/DAFMAN%2036-2806.md), and [references/AFI 36-2406.md](references/AFI%2036-2406.md) as baseline policy and writing authorities.
 4. Identify the target writing lane before writing. Use [references/output-formats.md](references/output-formats.md) to choose the right structure for a performance report, an award package (`AF Form 1206`), a decoration citation, or a short leadership summary.
 5. Rewrite the provided material into action, impact, result form when the requested piece requires it. Use [references/writing-patterns.md](references/writing-patterns.md) to tighten verbs, add scale, and eliminate vague praise.
@@ -85,21 +85,27 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Start with [references/AFH 33-337/quick-map.md](references/AFH%2033-337/quick-map.md) to route the question to the right handbook chapter. Search [references/AFH 33-337/index.md](references/AFH%2033-337/index.md) with [scripts/search_tongue_and_quill.py](scripts/search_tongue_and_quill.py) only when the quick map is not enough.
 - Read [references/DAFI 36-2803.md](references/DAFI%2036-2803.md) for program governance, approval-authority logic, duplicate-recognition constraints, acronym minimization, and other-recognition alternatives when a decoration is not appropriate.
 - Read [references/DAFMAN 36-2806.md](references/DAFMAN%2036-2806.md) for personal military decoration criteria, recommendation mechanics, citation limits, acronym restrictions, and retirement wording rules.
-- Read [references/decoration-guidance.md](references/decoration-guidance.md) for integrated decoration-writing workflow, medal-family translation, evidence rules, validation behavior, and persisted worked examples of what right looks like at the split, consolidation, ordering, and final-paragraph stages.
-- Read [references/decoration-ranking.md](references/decoration-ranking.md) before choosing which accomplishments to carry into a decoration citation body. For decoration ranking, split multi-part ALQ statements into individual accomplishments first, consolidate related items second, stop for review, then rank the approved consolidated and remaining standalone accomplishments and stop for review again before drafting. Use the worked examples in that file when showing the user what good splitting, consolidation, ranking, and citation-body ordering look like.
+- Read [references/decoration-guidance.md](references/decoration-guidance.md) for the master decoration workflow and stage map.
+- Read [references/decoration-intake.md](references/decoration-intake.md) for the exact first-response intake for decoration work.
+- Read [references/decoration-splitting.md](references/decoration-splitting.md) for split logic and the split-review template.
+- Read [references/decoration-consolidation.md](references/decoration-consolidation.md) for merge logic and merge-review expectations.
+- Read [references/decoration-ranking.md](references/decoration-ranking.md) before choosing which accomplishments to carry into a decoration citation body. Use it for ranking-specific logic, scoring, and the ranking-review template after split and merge review are complete.
+- Read [references/decoration-drafting.md](references/decoration-drafting.md) for citation drafting order, line logic, and final validation after the user approves the final ranked order.
 - Read [references/decoration-examples.md](references/decoration-examples.md) for preserved achievement and commendation example citations.
 - Read [references/AFI 36-2406.md](references/AFI%2036-2406.md) for officer and enlisted performance-brief structure, section-specific writing rules, mandatory fitness comments, stratification limits, and future-role guardrails.
-- Read [references/statement-shared.md](references/statement-shared.md) for shared statement mechanics across the performance-report lane and `AF Form 1206`.
-- Read [references/statement-validation.md](references/statement-validation.md) for the required validation order, troubleshooting flow, impactfulness checklist, clarity checklist, and conflict-resolution priority during statement iteration.
-- Read [references/epb-guidance.md](references/epb-guidance.md) for performance-report statement behavior, ALQ routing, and hard limits.
-- Read [references/performance-report-examples.md](references/performance-report-examples.md) for ALQ-fit examples and one-statement-at-a-time performance-report patterns.
+- Read [references/shared-guidance.md](references/shared-guidance.md) for shared mechanics across the performance-brief lane and `AF Form 1206`.
+- Read [references/shared-validation.md](references/shared-validation.md) for the required validation order, troubleshooting flow, impactfulness checklist, clarity checklist, and conflict-resolution priority during statement iteration.
+- Read [references/performance-brief-guidance.md](references/performance-brief-guidance.md) for performance-report statement behavior, ALQ routing, and hard limits.
+- Read [references/performance-brief-examples.md](references/performance-brief-examples.md) for ALQ-fit examples and one-statement-at-a-time performance-report patterns.
 - Read [references/award-guidance.md](references/award-guidance.md) for award-package limits, review workflow, and preserved examples.
 - Read [references/Acronyms.md](references/Acronyms.md) before finalizing performance reports, awards, or decorations that may contain acronyms.
-- Read [references/intake-checklist.md](references/intake-checklist.md) when inputs are incomplete or disorganized.
+- Read [references/intake-checklist.md](references/intake-checklist.md) when you need to route intake to the correct lane-specific intake file.
+- Read [references/performance-brief-intake.md](references/performance-brief-intake.md) for performance-brief intake.
+- Read [references/award-intake.md](references/award-intake.md) for award-package intake.
 - Use [scripts/count_text.py](scripts/count_text.py) when exact length compliance matters.
 - Use [scripts/check_spelling_grammar.py](scripts/check_spelling_grammar.py) to flag likely spelling and grammar issues before final delivery.
 - Use [scripts/search_tongue_and_quill.py](scripts/search_tongue_and_quill.py) to locate handbook guidance on grammar, punctuation, tone, structure, bullets, memorandums, abbreviations, capitalization, and numbers.
 - Use [scripts/validate_acronyms.py](scripts/validate_acronyms.py) to flag acronym-like tokens that may violate the approved guidance.
 - Read [references/writing-patterns.md](references/writing-patterns.md) when converting plain-English notes into award language.
 - Read [references/output-formats.md](references/output-formats.md) when choosing structure, section order, or line allocation.
-- Reuse [assets/performance-statement-template.md](assets/performance-statement-template.md), [assets/award-template.md](assets/award-template.md), and [assets/citation-template.md](assets/citation-template.md) as starting documents when the user needs a fill-in template.
+- Reuse [assets/performance-brief-template.md](assets/performance-brief-template.md), [assets/award-template.md](assets/award-template.md), and [assets/decoration-template.md](assets/decoration-template.md) as starting documents when the user needs a fill-in template.

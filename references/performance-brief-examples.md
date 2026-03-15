@@ -1,4 +1,4 @@
-# Performance Report Examples
+# Performance Brief Examples
 
 Use these approved examples to help judge ALQ fit, compression patterns, and tone for performance-report statements.
 

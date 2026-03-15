@@ -1,6 +1,6 @@
 # Shared Statement Mechanics
 
-Use this reference for statement behavior that applies across the performance-report lane and `AF Form 1206` unless a lane-specific file overrides it. In this skill, `EPB` and `OPB` are treated as interchangeable terms unless the user later requires a distinction.
+Use this reference for shared behavior that applies across the performance-brief lane and `AF Form 1206` unless a lane-specific file overrides it. In this skill, `EPB` and `OPB` are treated as interchangeable terms unless the user later requires a distinction.
 
 ## Glossary
 

@@ -20,32 +20,8 @@ Use this reference before drafting a decoration citation body. Do not pick accom
 - During ranking review, use the `Rank` numbers in the first column as the user-facing review references
 - Do not introduce any other numbering scheme during review
 - Treat each provided EPB or OPB statement as potentially containing more than one accomplishment
-- Parse accomplishments at the statement boundary, not at the clause or phrase level, unless the approved run-on edge case applies
-- Strip transition-only lead-ins during extraction, such as `Also`, `Additionally`, `Furthermore`, and `Moreover`
-- For `E`, `L`, `M`, and `I`:
-  - first, check for the run-on edge case before counting sentences
-  - second, if it is not a run-on edge case, count sentences and apply the normal split rules
-  - `E`, `L`, `M`, and `I` may produce 2 split items depending on whether the entry contains 2 or 4 sentences
-  - if the ALQ entry contains 2 sentences, split sentence `1` into split `1` and sentence `2` into split `2`
-  - if the ALQ entry contains 4 sentences, split sentences `1+2` into split `1` and sentences `3+4` into split `2`
-- For `H`, always keep the full entry as 1 accomplishment with no splitting
-- Do not count sentences for `H`
-- Do not apply the edge-case split rule to `H`
-- If an `H` entry is shown as more than 1 split item, treat that as invalid output and correct it before ranking
-- Edge-case handling:
-  - if a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
-  - use this edge case only when the normal `1+2` and `3+4` split would break the meaning
-- Run-on handling:
-  - if the source uses one run-on sentence but clearly contains two accomplishments, treat that check before sentence counting and normalize it into 2 sentence-level split items before review
-  - use this only when the source clearly contains a natural break between one accomplishment and a separate result or follow-on accomplishment
-  - do not preserve the run-on structure if doing so would block correct splitting
-- For split and merge review, preserve the source wording as much as possible
-- Do not rewrite split or merged review text into citation prose
-- Preserve the source numbers, acronyms, abbreviations, and shorthand during split and merge review
-- Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
-- Never split at the clause, phrase, metric, or semicolon level
-- Never split one sentence into multiple mini-items, except for the approved run-on edge case above
-- Never split a 4-sentence accomplishment into more than 2 split items
+- Use the splitting rules from `decoration-guidance.md` as the authoritative split logic before ranking begins
+- Assume the split review step is already complete before using this file to rank the pool
 - Consolidate similar accomplishments into grouped accomplishment clusters
 - Rank the approved consolidated accomplishment clusters together with the remaining approved standalone splits, not the original statement shell and not the raw unsorted split list
 

@@ -20,8 +20,8 @@ Policy anchors:
 
 - `AFI 36-2406` for section structure, mandatory comments, stratification, and future-role rules
 - `AFH 33-337` chapters 7, 8, 19, 26, 27, and 28 for writing style and mechanics
-- `statement-shared.md` for common statement mechanics
-- `epb-guidance.md` for performance-report statement rules
+- `shared-guidance.md` for common statement mechanics
+- `performance-brief-guidance.md` for performance-report statement rules
 
 Workflow notes:
 
@@ -99,7 +99,7 @@ Policy anchors:
 
 - `AFH 33-337` chapter 19 for bullet construction and polish
 - `Acronyms.md` and validator rules for abbreviation control
-- `statement-shared.md` for common statement construction rules
+- `shared-guidance.md` for common statement construction rules
 - `award-guidance.md` for award-package hard limits, review flow, and examples
 - Unit template or scoring model when provided
 

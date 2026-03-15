@@ -100,7 +100,7 @@ When space is limited, prefer:
 - Treat the approved example library as an authoritative pattern source for acceptable EPB voice
 - `H` is intentionally different: write it as a push statement instead of forcing the same action-impact-result balance used in `E`, `L`, `M`, and `I`
 - For `H`, stronger recommendation language and future-readiness language are acceptable when they follow the approved example pattern
-- Use `statement-shared.md` for common mechanics and `epb-guidance.md` for performance-report limits
+- Use `shared-guidance.md` for common mechanics and `performance-brief-guidance.md` for performance-report limits
 
 ## Performance-report statement workflow
 

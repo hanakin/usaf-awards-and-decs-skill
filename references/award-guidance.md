@@ -1,6 +1,6 @@
 # Award Guidance
 
-Use this reference for `AF Form 1206` work after reading `statement-shared.md`.
+Use this reference for `AF Form 1206` work after reading `shared-guidance.md`.
 
 This lane is assistive by default. If the user asks for one statement, provide one statement. If the user asks for a paragraph-format package, provide the requested paragraph block or blocks.
 
@@ -48,7 +48,7 @@ Always identify which format is required before drafting.
 
 At each step, use the approved `1206` examples to show what strong statement shaping, ranking logic, and board-readable compression look like.
 
-Use `statement-validation.md` for the full validation order, troubleshooting logic, impactfulness checklist, clarity checklist, and conflict-resolution priority.
+Use `shared-validation.md` for the full validation order, troubleshooting logic, impactfulness checklist, clarity checklist, and conflict-resolution priority.
 
 ## Output notes
 

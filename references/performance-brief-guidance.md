@@ -1,6 +1,6 @@
 # Performance Report Guidance
 
-Use this reference for performance-report statement work after reading `statement-shared.md`. In this skill, `EPB` and `OPB` are treated as interchangeable terms unless the user later requires a distinction.
+Use this reference for performance-report statement work after reading `shared-guidance.md`. In this skill, `EPB` and `OPB` are treated as interchangeable terms unless the user later requires a distinction.
 
 ## Performance-report rules
 
@@ -85,8 +85,8 @@ Why this is right:
 7. Validate exact count, acronym use, spelling, grammar, clarity, and section fit before delivery
 8. When both Duty Description and ALQ content are in scope, validate Duty Description alignment before delivery
 
-At each step, use the approved performance-report examples to show what a good ALQ fit, good split, good push statement, or good final statement looks like.
+At each step, use the approved performance-brief examples to show what a good ALQ fit, good split, good push statement, or good final statement looks like.
 
-Use `statement-validation.md` for the detailed validation order, troubleshooting logic, and conflict-resolution priority.
+Use `shared-validation.md` for the detailed validation order, troubleshooting logic, and conflict-resolution priority.
 
-Use `performance-report-examples.md` to compare ALQ fit, one-statement-at-a-time patterns, and approved `H` push-statement style before drafting.
+Use `performance-brief-examples.md` to compare ALQ fit, one-statement-at-a-time patterns, and approved `H` push-statement style before drafting.
