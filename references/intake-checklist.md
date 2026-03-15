@@ -98,6 +98,8 @@ For decoration citation help, use this exact default intake approach:
 2. ask for them in categorized form by report year and ALQ section
 3. ask for supporting metrics, local line or character limits, or required transitions only if the user already mentioned them or the source statements clearly need clarification
 4. if the EPB or OPB source is unavailable, ask only for accomplishment statements with metrics and scope, not metadata
+5. do not expand `E`, `L`, `M`, `I`, and `H` into prose labels in the intake ask
+6. do not offer a starter citation shell before the user provides source material
 
 Preferred decoration intake format:
 
@@ -124,6 +126,8 @@ I:
 - statement
 H:
 - statement
+
+Use that exact lettered format in the intake request. Do not rewrite it as `Executing the Mission`, `Leading People`, `Managing Resources`, `Improving the Unit`, or `Higher Level Review`.
 
 If EPB or OPB source is unavailable, use this fallback format instead:
 

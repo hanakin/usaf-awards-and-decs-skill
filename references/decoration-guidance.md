@@ -47,8 +47,10 @@ Use this staged process for decoration citations. Do not skip the review gates u
 1. Request the necessary source input:
    - ask for the full EPB or OPB statement sets covering the medal period
    - ask for them in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`
+   - in the intake ask, keep the ALQ labels as `E`, `L`, `M`, `I`, and `H`; do not expand them into prose labels
    - if the EPB or OPB source is unavailable, ask for accomplishment statements with supporting metrics or scope only
    - do not ask for award period, rank, name, duty title, unit, strongest accomplishments, or citation-versus-justification choice during this default intake
+   - do not offer a starter citation shell or direct draft before the source material is reviewed
 2. Split the provided material into numbered accomplishment splits and propose any valid consolidations or merges.
 3. Stop and get user feedback on the splits and proposed consolidations before ranking anything.
 4. Rank the final pool of approved consolidated accomplishments plus the remaining standalone accomplishments.
@@ -84,7 +86,9 @@ When helping with a decoration citation, the default job is to guide the user th
 
 ## Accomplishment selection
 
-- Split EPB or OPB source material at the statement boundary first:
+- Split EPB or OPB source material in this order:
+  - first, check for the run-on edge case before counting sentences
+  - second, if it is not a run-on edge case, count sentences and apply the normal split rules
   - `E`, `L`, `M`, and `I` may produce 2 split items depending on whether the entry contains 2 or 4 sentences
   - if the entry contains 2 sentences, split sentence `1` into split `1` and sentence `2` into split `2`
   - if the entry contains 4 sentences, split sentences `1+2` into split `1` and sentences `3+4` into split `2`
@@ -96,7 +100,7 @@ When helping with a decoration citation, the default job is to guide the user th
   - if a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
   - use this edge case only when the normal `1+2` and `3+4` split would break the meaning
 - Run-on handling:
-  - if the source uses one run-on sentence but clearly contains two accomplishments, normalize it into 2 sentence-level split items before review
+  - if the source uses one run-on sentence but clearly contains two accomplishments, treat that check before sentence counting and normalize it into 2 sentence-level split items before review
   - use this only when the source clearly contains a natural break between one accomplishment and a separate result or follow-on accomplishment
   - do not preserve the run-on structure if doing so would block correct splitting
 - For split and merge review, preserve the source wording as much as possible
@@ -104,7 +108,7 @@ When helping with a decoration citation, the default job is to guide the user th
 - Preserve the source numbers, acronyms, abbreviations, and shorthand during split and merge review
 - Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
 - Never split an accomplishment at the clause, phrase, semicolon, or metric level
-- Never split one sentence into multiple mini-actions
+- Never split one sentence into multiple mini-actions, except for the approved run-on edge case above
 - Never split a 4-sentence accomplishment into more than 2 split items
 - Strip transition-only intros like `Also` and `Additionally` from split accomplishments; restore transitions only later if needed for final citation flow
 - Consolidate only explicitly related accomplishments second so the citation captures more content with less repetition
@@ -345,6 +349,8 @@ Use this worked example to reinforce the following:
 - If the EPB or OPB source is unavailable, ask for accomplishment statements plus metrics or scope only, without metadata
 - Do not ask the user to pre-rank the strongest accomplishments; do that work inside the decoration workflow
 - Do not ask the user for period, role, unit, rank, name, strongest accomplishments, or citation-versus-justification choice during default decoration intake
+- Do not expand the ALQ letters into prose labels during the default intake ask
+- Do not offer a starter citation shell, direct draft, or proposed medal structure before the source material has gone through split and ranking review
 - Treat the split and consolidation review step as mandatory before ranking
 - Treat the ranking and final-selection review step as mandatory before drafting
 - Do not ask for the period, role, unit, basis, or other metadata-dependent pieces unless the user explicitly asks to work on them

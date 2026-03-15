@@ -1,6 +1,7 @@
 # Decoration Citation Draft Template
 
 Use this file as a drafting scaffold only. Do not treat it as the final policy authority for opening or closing language. Final citation text must match `DAFMAN 36-2806` for the specific decoration.
+Do not present this scaffold to the user during default decoration intake. Use it only after the source material has been reviewed, split, merged, and ranked.
 
 ## Required inputs
 

@@ -63,9 +63,11 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - For decorations, keep review references stable by using the first-column split numbers in the split-review table, merge IDs like `M1`, and rank numbers in the ranking table; do not invent any other numbering scheme during review.
 - For decorations, default to asking for the full EPB or OPB statement set covering the medal period; use rough accomplishment bullets only as fallback when those statements are unavailable.
 - For decorations, ask for that EPB or OPB content in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`.
+- For decorations, the default first response should be a short request to paste the year-tagged EPB or OPB sections in the exact `EPB23` or `EPB 2023` plus `E`, `L`, `M`, `I`, `H` format; do not expand the ALQ letters into prose labels.
 - For decorations, do not ask the user to pre-rank the strongest accomplishments or choose between citation and justification; default to citation drafting and do the split, consolidation, and ranking work inside the skill.
 - For decorations, if the user already identified the medal family, do not ask them to restate the exact medal label unless they later indicate a different service or a different medal family.
 - For decorations, if EPB or OPB source is unavailable, use a narrow fallback ask for accomplishment statements with metrics and scope only; do not fall back to asking for rank, name, duty title, unit, base, or dates.
+- For decorations, do not offer a starter citation shell, direct draft, or accomplishment-order recommendation before the user provides source material and completes the split and ranking reviews.
 - For decorations, follow this mandatory citation workflow:
   - request the necessary categorized EPB or OPB statements first
   - split those statements into numbered accomplishment splits and show any proposed consolidations or merges
