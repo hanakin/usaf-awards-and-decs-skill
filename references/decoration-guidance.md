@@ -29,7 +29,7 @@ This lane is assistive by default. Provide the specific decoration help requeste
 
 - Build the citation from source facts only
 - Full EPB or OPB statement sets covering the medal period are the preferred source input for decoration drafting
-- Ask for the EPB or OPB content in categorized form by report and ALQ section, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
+- Ask for the EPB or OPB content in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`
 - Performance reports, prior drafts, and user-provided accomplishment notes may all be used if they are explicitly provided
 - Treat rough accomplishment bullets as fallback input only when the full EPB or OPB statement set is unavailable
 - When using the fallback path, ask for accomplishment statements with metrics and scope only; do not ask for rank, name, duty title, unit, base, location, or dates
@@ -46,7 +46,7 @@ Use this staged process for decoration citations. Do not skip the review gates u
 
 1. Request the necessary source input:
    - ask for the full EPB or OPB statement sets covering the medal period
-   - ask for them in categorized form by report and ALQ section, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
+   - ask for them in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`
    - if the EPB or OPB source is unavailable, ask for accomplishment statements with supporting metrics or scope only
    - do not ask for award period, rank, name, duty title, unit, strongest accomplishments, or citation-versus-justification choice during this default intake
 2. Split the provided material into numbered accomplishment splits and propose any valid consolidations or merges.
@@ -85,8 +85,27 @@ When helping with a decoration citation, the default job is to guide the user th
 ## Accomplishment selection
 
 - Split EPB or OPB source material at the statement boundary first:
-  - `E`, `L`, `M`, and `I` may produce 1 or 2 accomplishments depending on whether the entry contains 2 or 4 sentences
-  - `H` stays whole as 1 accomplishment
+  - `E`, `L`, `M`, and `I` may produce 2 split items depending on whether the entry contains 2 or 4 sentences
+  - if the entry contains 2 sentences, split sentence `1` into split `1` and sentence `2` into split `2`
+  - if the entry contains 4 sentences, split sentences `1+2` into split `1` and sentences `3+4` into split `2`
+  - `H` always stays whole as 1 accomplishment with no splitting
+- Do not count sentences for `H`
+- Do not apply the edge-case split rule to `H`
+- If an `H` entry is shown as more than 1 split item, treat that as invalid output and correct it before proceeding
+- Edge-case handling:
+  - if a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
+  - use this edge case only when the normal `1+2` and `3+4` split would break the meaning
+- Run-on handling:
+  - if the source uses one run-on sentence but clearly contains two accomplishments, normalize it into 2 sentence-level split items before review
+  - use this only when the source clearly contains a natural break between one accomplishment and a separate result or follow-on accomplishment
+  - do not preserve the run-on structure if doing so would block correct splitting
+- For split and merge review, preserve the source wording as much as possible
+- Do not rewrite split or merged review text into citation prose
+- Preserve the source numbers, acronyms, abbreviations, and shorthand during split and merge review
+- Only make the minimum wording change needed for a split to stand alone, such as changing the opening of a second split to `He`, `She`, or the member's name
+- Never split an accomplishment at the clause, phrase, semicolon, or metric level
+- Never split one sentence into multiple mini-actions
+- Never split a 4-sentence accomplishment into more than 2 split items
 - Strip transition-only intros like `Also` and `Additionally` from split accomplishments; restore transitions only later if needed for final citation flow
 - Consolidate only explicitly related accomplishments second so the citation captures more content with less repetition
 - Rank the consolidated accomplishment groups before drafting the citation body
@@ -129,26 +148,27 @@ Use these exact display patterns during the two mandatory review gates so the us
 Use this order:
 
 1. a short line stating that this is the split review
-2. a table with `Split #`, `Merged ID`, and `Split`
+2. a table with `Split #`, `EPB Ref`, `Merged ID`, and `Split`
 3. a `Proposed Merges` section listing the rewritten merged accomplishments by merged ID
 4. a short `Review Needed` section asking which merges are valid, invalid, or missing
 
 Feedback rule:
 
 - the user should reference items by the first-column numbers in the table
-- do not ask the user to reply with split IDs or merged IDs during review
+- do not ask the user to reply with split numbers outside the table or with merge IDs during review
 - merged IDs still appear in the table for traceability, but feedback should key off the first-column numbers only
+- use the table format exactly; do not replace it with a numbered list, freeform paragraphs, or any outline format
 
 Display pattern:
 
 Split Review
 
-| Split # | Merged ID | Split |
-|---|---|---|
-| 1 | M1 | [full split text] |
-| 2 | M1 | [full split text] |
-| 3 |  | [full split text] |
-| 4 | M2 | [full split text] |
+| Split # | EPB Ref | Merged ID | Split |
+|---|---|---|---|
+| 1 | E23 | M1 | [full split text] |
+| 2 | E23 | M1 | [full split text] |
+| 3 | L24 |  | [full split text] |
+| 4 | I25 | M2 | [full split text] |
 
 Proposed Merges
 
@@ -201,24 +221,78 @@ Review Needed
 
 Source bullet:
 
-- `7`: `TSgt Snuffy briefed Gp and Wg leaders on 3 occasions on the utilization of target analysts across 3 CCMD task forces. His expertise outlined critical issues with solutions for action and earned a Wg coin.`
+- `L example`: `Snuffy briefed Gp & Wg leaders on 3 occasions on target analysts utilization across 3 CCMD TFs. His expertise outlined critical issues and solutions for action earning Gp lauding and a Wg coin. On top of that he led creation of a Sq mentoring program 29 sessions. Institutionalized NCO development and values, earning Gp attention and praise.`
 
 Good split:
 
-- `7a`: `Technical Sergeant Snuffy briefed group and wing leaders three times on analyst utilization across three combatant command task forces, outlined issues with solutions for action, and earned a wing coin.`
+- Split `1`: `Snuffy briefed Gp & Wg leaders on 3 occasions on target analysts utilization across 3 CCMD TFs. His expertise outlined critical issues and solutions for action earning Gp lauding and a Wg coin.`
+- Split `2`: `He led creation of a Sq mentoring program 29 sessions. Institutionalized NCO development and values, earning Gp attention and praise.`
 
 Why this is right:
 
-- the split preserves the full accomplishment
-- abbreviations are expanded into decoration prose
+- it follows the 4-sentence `1+2` and `3+4` rule exactly
+- source language is preserved for review
 - the measurable scope stays intact
 - the text reads cleanly as a standalone accomplishment
 
+Bad split:
+
+- Split `1` `Technical Sergeant Snuffy briefed group and wing leaders three times.`
+- Split `2` `He addressed target analyst utilization.`
+- Split `3` `He outlined issues and solutions.`
+- Split `4` `He earned recognition.`
+
+Why this is wrong:
+
+- it turns one 4-sentence entry into 4 split items
+- it destroys the action-impact relationship
+- it creates weak mini-items that are unusable for merge review and ranking
+
+### Edge-case split example
+
+Source bullet:
+
+- `I example`: `TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoD joint staff as "most detailed ever". He also authored Joint Targeting Analysts SOP, merging AF targeting doctrine with cyber TTPs to fortify 1N8 role for joint cyber mission.`
+
+Good edge-case split:
+
+- Split `1`: `TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoD joint staff as "most detailed ever".`
+- Split `2`: `He authored Joint Targeting Analysts SOP, merging AF targeting doctrine with cyber TTPs to fortify 1N8 role for joint cyber mission.`
+
+Why this is right:
+
+- sentences `1+2+3` are one sustained accomplishment
+- sentence `4` is a separate accomplishment
+- the normal `1+2` and `3+4` split would break the meaning
+
+### Run-on split example
+
+Source bullet:
+
+- `M example`: `SrA Peter Snuffy maximized effectiveness by training in subjects outside his specialty, completing the 216-hour Cyber Threat Intelligence Analysis course with a 4.0 GPA, certifying as a Basic-level All Source Analyst within the Cyber community, which ensured all 58 reports were selected and communicated effectively to Joint Task Force leadership.`
+
+Good run-on split:
+
+- Split `1`: `SrA Peter Snuffy maximized effectiveness by training in subjects outside his specialty, completing the 216-hour Cyber Threat Intelligence Analysis course with a 4.0 GPA, certifying as a Basic-level All Source Analyst within the Cyber community.`
+- Split `2`: `He ensured 58 reports were selected and communicated effectively to Joint Task Force leadership.`
+
+Why this is right:
+
+- the source is badly written as one run-on sentence
+- the split normalizes it into 2 sentence-level accomplishments
+- the first split keeps the training and certification accomplishment together
+- the second split preserves the separate reporting result with only the minimum opener repair
+
 ### Consolidation example
+
+Source accomplishments:
+
+- Split `1`: `Peter infused new target discovery and development tactics, techniques, and procedures that mitigated delays, resolved legal and reporting issues, and accelerated nineteen kill chains across ten operations.`
+- Split `2`: `As the combatant command system-analysis-tool program manager, he trained and managed 33 combatant command analysts and restored 2.5 million target identifiers across 1,500 databases, resolving a Department of War-wide issue.`
 
 Good consolidation:
 
-- `6b.9b.11b`: `Snuffy built the joint task force's first order-of-battle database, created a real-time visualization tool, and restored 2.5 million target identifiers across 1,500 databases, resolving a Department of War-wide issue.`
+- `M5`: `Snuffy built the joint task force's first order-of-battle database, created a real-time visualization tool, and restored 2.5 million target identifiers across 1,500 databases, resolving a Department of War-wide issue.`
 
 Why this is right:
 
@@ -226,21 +300,25 @@ Why this is right:
 - the consolidation preserves the strongest metrics
 - the rewrite is denser and stronger than the component items alone
 
-### Body-order example
+### Body-order rule
 
-For a five-accomplishment decoration body, use this ordering model when the facts support it:
+For a five-accomplishment decoration body, apply this ordering rule:
 
-1. `6b.9b.11b`
-2. `11a`
-3. `7a`
-4. `10`
-5. `4a.9a`
+1. line 2 should be the strongest mission-impact accomplishment
+2. line 3 should be the second strongest mission-impact accomplishment
+3. line 4 should begin the organizational-impact transition and should have the lowest level of impact among the final three lines
+4. line 5 should continue the organizational-impact transition and should have a higher level of impact than line 4 but less than line 6
+5. line 6 should be the highest organizational-impact line in the body
 
-Why this is right:
+Apply this rule because:
 
-- line 2 opens with the strongest mission-impact accomplishment
-- the middle lines build upward in breadth and scope
-- line 6 closes the body with the strongest overall accomplishment
+- line 2 opens with the most impactful mission accomplishment
+- line 3 reinforces the mission case before shifting away from pure mission sorting
+- lines 4 through 6 walk upward in organizational level of impact
+- example progression may move from Air Force to United States Cyber Command to Department of War when the facts support it
+- line 6 closes the body with the highest-level accomplishment
+
+Treat this as the ideal citation structure, not an absolute requirement. If the available accomplishments do not support this exact pattern, preserve the strongest and clearest citation instead of forcing the order.
 
 ### Final-paragraph example
 
@@ -263,7 +341,7 @@ Use this worked example to reinforce the following:
 - Do not default to one-line fragments or statement variations unless the user explicitly asks for that kind of help
 - During step-by-step work, use the approved decoration examples to show what a strong split, consolidation, ranking choice, or citation line looks like
 - When decoration source material is needed, ask for the full EPB or OPB statements for the medal period before asking for rough bullets
-- Ask for that source material in categorized `EPB1` / `E-L-M-I-H` form by default
+- Ask for that source material in categorized `EPB23` or `EPB 2023` form with `E-L-M-I-H` sections by default
 - If the EPB or OPB source is unavailable, ask for accomplishment statements plus metrics or scope only, without metadata
 - Do not ask the user to pre-rank the strongest accomplishments; do that work inside the decoration workflow
 - Do not ask the user for period, role, unit, rank, name, strongest accomplishments, or citation-versus-justification choice during default decoration intake

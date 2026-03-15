@@ -60,9 +60,9 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - For performance-report requests, help determine the best ALQ category from the provided achievements when that is what the user is asking, then provide variations for one statement at a time.
 - For statement-format `AF Form 1206`, provide a single statement unless the user explicitly asks for multiple options.
 - For paragraph-format `AF Form 1206` and for decorations, provide the full paragraph or full citation body the user asked for.
-- For decorations, keep source IDs stable during ranking review by using original bullet IDs, split IDs like `4a`, and consolidation IDs like `4a.9a`; do not invent a separate ranking-only numbering system.
+- For decorations, keep review references stable by using the first-column split numbers in the split-review table, merge IDs like `M1`, and rank numbers in the ranking table; do not invent any other numbering scheme during review.
 - For decorations, default to asking for the full EPB or OPB statement set covering the medal period; use rough accomplishment bullets only as fallback when those statements are unavailable.
-- For decorations, ask for that EPB or OPB content in categorized form by report and ALQ section, such as `EPB1` then `E`, `L`, `M`, `I`, `H`.
+- For decorations, ask for that EPB or OPB content in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`.
 - For decorations, do not ask the user to pre-rank the strongest accomplishments or choose between citation and justification; default to citation drafting and do the split, consolidation, and ranking work inside the skill.
 - For decorations, if the user already identified the medal family, do not ask them to restate the exact medal label unless they later indicate a different service or a different medal family.
 - For decorations, if EPB or OPB source is unavailable, use a narrow fallback ask for accomplishment statements with metrics and scope only; do not fall back to asking for rank, name, duty title, unit, base, or dates.

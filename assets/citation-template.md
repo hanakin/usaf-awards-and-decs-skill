@@ -9,8 +9,8 @@ Use this file as a drafting scaffold only. Do not treat it as the final policy a
 - Hard limit:
 - Full EPB or OPB statements covering the medal period in categorized form:
 - Example structure:
-  - `EPB1` -> `E`, `L`, `M`, `I`, `H`
-  - `EPB2` -> `E`, `L`, `M`, `I`, `H`
+  - `EPB23` or `EPB 2023` -> `E`, `L`, `M`, `I`, `H`
+  - `EPB24` or `EPB 2024` -> `E`, `L`, `M`, `I`, `H`
 - Supporting metrics or scope clarifiers not already captured in those statements:
 - Required narrative transitions if any:
 - Placeholder policy for missing facts:

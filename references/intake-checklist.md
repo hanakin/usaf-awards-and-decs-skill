@@ -68,7 +68,7 @@ For each accomplishment, gather:
 - Confirm which source documents are authorized for use
 - For decoration drafting, ask for the full EPB or OPB statement set covering the medal period as the default source input
 - Use rough bullets only as fallback when the full EPB or OPB statement set is unavailable
-- Ask for the EPB or OPB content in categorized form, grouped by report, such as `EPB1`, then `E`, `L`, `M`, `I`, `H`
+- Ask for the EPB or OPB content in categorized form, grouped by report year, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`
 - Confirm whether the reviewer expects line-by-line narrative transitions
 - Confirm whether the package needs a combined certificate and citation
 - Confirm whether missing required facts should remain as placeholders
@@ -95,13 +95,13 @@ Ask the user only for what the requested piece requires. Do not reuse a generic 
 For decoration citation help, use this exact default intake approach:
 
 1. ask only for the full EPB or OPB statements covering the medal period
-2. ask for them in categorized form by report and ALQ section
+2. ask for them in categorized form by report year and ALQ section
 3. ask for supporting metrics, local line or character limits, or required transitions only if the user already mentioned them or the source statements clearly need clarification
 4. if the EPB or OPB source is unavailable, ask only for accomplishment statements with metrics and scope, not metadata
 
 Preferred decoration intake format:
 
-EPB1:
+EPB23:
 E:
 - statement
 L:
@@ -113,7 +113,7 @@ I:
 H:
 - statement
 
-EPB2:
+EPB24:
 E:
 - statement
 L:
