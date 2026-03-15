@@ -9,6 +9,26 @@ Consolidate only explicitly related accomplishments.
 Consolidation merges distinct source accomplishments into 1 stronger broader contribution.
 Consolidation never means recombining the 2 required split rows from the same original EPB entry.
 
+Before testing merges, take a first pass at grouping the split pool.
+Assign each split:
+
+- a broad category
+- a specific working bucket
+
+Common broad categories include:
+
+- mission
+- exercise
+- admin
+- volunteer
+
+Those are common anchors, not a closed list.
+If a split clearly fits a different broad category, infer it from the source text.
+
+The specific working bucket is also inferred from the source text.
+It is not a fixed approved list.
+Use it to surface likely merge candidates before applying the proof test.
+
 Good consolidation candidates are:
 
 - training-program development plus training integration plus analyst development
@@ -22,13 +42,21 @@ Consolidate only when the grouped items:
 - are explicitly related in content, not just loosely similar in theme
 - can be rewritten into one stronger accomplishment statement without losing the core facts
 - preserve the strongest metrics from the component items
+- preserve the strongest counts, scale, roll-up math, dollars, hours, percentages, or supported population from the component items
 - would still obviously read as 1 broader contribution to a reviewer who only saw the source text
 
 Use this proof test before proposing a merge:
 
+- first ask whether the items fall into the same broad category and specific working bucket
 - ask whether the linkage is explicit in the source text or clearly inherent in the same sustained effort
+- ask whether the source relationship supports a merge
+- if the items came from the same original statement, treat that as a warning sign and usually do not merge them, but do not treat it as an absolute bar if the source still supports 1 broader contribution
 - ask whether the merged line can be written without inventing connective reasoning such as "both support readiness" or "both involve production"
+- ask whether the merged line preserves the strongest source math instead of dropping it, weakening it, or re-expanding a stronger rolled-up fact into weaker subcounts
 - if either answer is no, do not merge
+
+Category overlap helps surface candidates.
+It does not prove the merge is valid by itself.
 
 Do not consolidate items that are only thematically similar.
 Do not consolidate items that would make the final citation sentence confusing or bloated.
@@ -40,10 +68,13 @@ Do not skip the merge check just because the split table already looks complete.
 
 ## How to consolidate
 
-1. pull out the most important facts from each source accomplishment
-2. keep the strongest metrics, scale, and consequence
-3. remove duplicate setup language
-4. rewrite the material into one stronger accomplishment statement
+1. assign each split a broad category and a specific working bucket
+2. look for likely candidates inside those buckets first
+3. check whether the source relationship actually supports a merge
+4. pull out the most important facts from each source accomplishment
+5. keep the strongest metrics, scale, consequence, and rolled-up math
+6. remove duplicate setup language
+7. rewrite the material into one stronger accomplishment statement
 
 ## Review-stage wording rule
 
@@ -58,6 +89,7 @@ Before accepting a merged accomplishment, verify:
 - the rewritten accomplishment is stronger than either source item alone
 - no source fact is double-counted
 - no rolled-up source fact is re-expanded into weaker subcounts
+- no strongest count, scale, roll-up, or other core math was omitted
 - no critical qualifier was dropped
 - no unrelated event was pulled in just because it sounded similar
 - the final rewritten accomplishment still reads as one coherent accomplishment

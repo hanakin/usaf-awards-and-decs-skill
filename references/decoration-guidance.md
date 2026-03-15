@@ -103,7 +103,9 @@ Use those stage files as the authoritative detailed instructions. Do not restate
 - split rows are review artifacts, not automatic merge candidates
 - split review is not complete until valid merge candidates have been checked and the `Proposed Merges` section is filled
 - consolidation merges distinct source accomplishments, not the 2 required split rows from 1 source entry
+- merge review should start by grouping splits into a broad category and a specific working bucket to surface likely candidates
 - thematic overlap alone is never enough to justify a merge
+- proposed merges must preserve the strongest source math, scale, and rolled-up metrics
 - merge approval happens before ranking
 - ranking review happens before drafting
 - the user's approved final order controls the draft order

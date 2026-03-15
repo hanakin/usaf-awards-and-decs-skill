@@ -3,7 +3,7 @@
 Use this file for the split-review stage of decoration work.
 
 Use `python3 scripts/build_decoration_splits.py` once per source statement as the default split-stage helper.
-The helper should return the raw sentence-based split result for that one statement, or flag a single-sentence run-on or unsupported count.
+The helper should return the raw sentence-based split result for that one statement, or flag a single-sentence run-on, a 3-sentence entry, a 5-sentence entry, or an entry with more than 5 sentences for manual review.
 The agent must still review every returned 4-sentence split against the original for a possible `3+1` edge case, manually resolve flagged edge cases, repair second-split openings when needed, build the split-review table, and verify the final overall row count before showing split review.
 
 ## Split workflow
@@ -118,9 +118,9 @@ Apply splitting in this order.
 - The split review is not complete until the agent has checked for valid consolidation candidates and filled the `Proposed Merges` section
 - If no valid consolidation candidates exist, write exactly: `- No valid merges proposed.`
 - If the output does not match this display format, stop and rebuild it before showing the review
-- Run `python3 scripts/build_decoration_splits.py --alq <E|L|M|I|H> --text "<statement>"` once per source statement
+- Run `python3 scripts/build_decoration_splits.py <E|L|M|I|H> "<statement>"` once per source statement
 - If the helper returns a 4-sentence split, compare it against the original statement and decide whether it must be overridden as a `3+1` edge case
-- If the helper flags an edge case, manually resolve it and confirm the source entry still produces the required row count before adding it to the table
+- If the helper flags a single-sentence run-on, a 3-sentence entry, a 5-sentence entry, or an entry with more than 5 sentences, manually resolve it and confirm the source entry still produces the required row count before adding it to the table
 - After all source statements are handled, manually verify the final overall split-row count before showing the split review
 
 ## Split review template

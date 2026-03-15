@@ -54,38 +54,51 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Expect the user to iterate with feedback and clarification between steps.
 - When working through a multi-step task, use the approved example data actively at each step to show what right looks like.
 - For example-driven help, provide short concrete examples during splitting, consolidation, ranking, and drafting rather than treating the example files as passive background only.
-- For performance reports, treat `EPB` and `OPB` as interchangeable terms within this skill unless the user later introduces a meaningful distinction.
-- For performance reports, preserve the sectioned evaluation structure and check for mandatory comments such as fitness language before finalizing.
-- For performance reports, treat the Duty Description as a required `450` character paragraph when the user asks for Duty Description help or when drafting a full report. It should summarize the key responsibilities reflected in the ALQs, including additional duties when they materially belong in the report.
-- For performance-report requests, help determine the best ALQ category from the provided achievements when that is what the user is asking, then provide variations for one statement at a time.
+- If the task looks compliance-sensitive or template-sensitive, ask for the template only when the missing format would materially change the output.
+
+## Performance Brief Rules
+
+- Treat `EPB` and `OPB` as interchangeable terms within this skill unless the user later introduces a meaningful distinction.
+- Preserve the sectioned evaluation structure and check for mandatory comments such as fitness language before finalizing.
+- Treat the Duty Description as a required `450` character paragraph when the user asks for Duty Description help or when drafting a full report. It should summarize the key responsibilities reflected in the ALQs, including additional duties when they materially belong in the report.
+- For performance-brief requests, help determine the best ALQ category from the provided achievements when that is what the user is asking, then provide variations for one statement at a time.
+
+## Award Rules
+
 - For statement-format `AF Form 1206`, provide a single statement unless the user explicitly asks for multiple options.
-- For paragraph-format `AF Form 1206` and for decorations, provide the full paragraph or full citation body the user asked for.
-- For decorations, keep review references stable by using the first-column split numbers in the split-review table, merge IDs like `M1`, and rank numbers in the ranking table; do not invent any other numbering scheme during review.
-- For decorations, default to asking for the full EPB or OPB statement set covering the medal period; use rough accomplishment bullets only as fallback when those statements are unavailable.
-- For decorations, ask for that EPB or OPB content in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`.
-- For decorations, the default first response should be a short request to paste the year-tagged EPB or OPB sections in the exact `EPB23` or `EPB 2023` plus `E`, `L`, `M`, `I`, `H` format; do not expand the ALQ letters into prose labels.
-- For decorations, do not ask the user to pre-rank the strongest accomplishments or choose between citation and justification; default to citation drafting and do the split, consolidation, and ranking work inside the skill.
-- For decorations, if the user already identified the medal family, do not ask them to restate the exact medal label unless they later indicate a different service or a different medal family.
-- For decorations, if EPB or OPB source is unavailable, use a narrow fallback ask for accomplishment statements with metrics and scope only; do not fall back to asking for rank, name, duty title, unit, base, or dates.
-- For decorations, do not offer a starter citation shell, direct draft, or accomplishment-order recommendation before the user provides source material and completes the split and ranking reviews.
-- For decorations, follow this mandatory citation workflow:
+- For paragraph-format `AF Form 1206`, provide the full paragraph the user asked for.
+
+## Decoration Rules
+
+- Keep review references stable by using the first-column split numbers in the split-review table, merge IDs like `M1`, and rank numbers in the ranking table; do not invent any other numbering scheme during review.
+- Default to asking for the full EPB or OPB statement set covering the medal period; use rough accomplishment bullets only as fallback when those statements are unavailable.
+- Ask for that EPB or OPB content in categorized form by report year and ALQ section, such as `EPB23` or `EPB 2023`, then `E`, `L`, `M`, `I`, `H`.
+- The default first response should be a short request to paste the year-tagged EPB or OPB sections in the exact `EPB23` or `EPB 2023` plus `E`, `L`, `M`, `I`, `H` format; do not expand the ALQ letters into prose labels.
+- Do not ask the user to pre-rank the strongest accomplishments or choose between citation and justification; default to citation drafting and do the split, consolidation, and ranking work inside the skill.
+- If the user already identified the medal family, do not ask them to restate the exact medal label unless they later indicate a different service or a different medal family.
+- If EPB or OPB source is unavailable, use a narrow fallback ask for accomplishment statements with metrics and scope only; do not fall back to asking for rank, name, duty title, unit, base, or dates.
+- Do not offer a starter citation shell, direct draft, or accomplishment-order recommendation before the user provides source material and completes the split and ranking reviews.
+- Follow this mandatory citation workflow:
   - request the necessary categorized EPB or OPB statements first
   - split those statements into numbered accomplishment splits and show any proposed consolidations or merges
   - stop for user feedback before ranking
   - then rank the approved consolidated and unconsolidated accomplishments together and show that ranking for review
   - stop for user feedback on final selection and order before drafting the citation
   - only build the citation after both review gates are complete, unless the user explicitly tells you to skip them
-- For decorations, treat the split table as a mechanical review artifact, not as the merge-candidate definition of the work.
-- For decorations, consolidation means combining distinct source accomplishments that are explicitly part of the same broader contribution; it never means restoring the 2 required split rows from the same original EPB entry back into 1 row.
-- For decorations, do not propose a merge based only on broad theme overlap such as training, readiness, production, leadership, volunteerism, or impact; require explicit source linkage.
-- For decorations, before proposing any merge, apply this proof test: the merged accomplishment must still read as one coherent broader contribution without adding connective assumptions that are not already supported by the source text.
-- For decorations, if explicit linkage is not clear from the source text, default to no merge.
-- For decorations, the split-review step must use the exact split-review table from `decoration-splitting.md`; do not replace it with prose lists, alternate headers, likely-cut notes, or ranking commentary.
-- For decorations, if the split count math or split-review format is wrong, loop back and rebuild the split stage before showing it to the user.
-- For decorations, use the Python split helper once per source statement for raw sentence-based splits, then manually review any returned 4-sentence split for a possible `3+1` override and resolve flagged edge cases and opener repairs before building the split-review table.
-- For decorations, do not treat the raw split table as a completed review step; after splitting, the agent must still check for valid consolidation candidates and fill the `Proposed Merges` section before showing split review.
-- For decorations, do not ask for award period, role, unit, rank, name, or other intro metadata unless the user explicitly wants help filling the intro line.
-- If the task looks compliance-sensitive or template-sensitive, ask for the template only when the missing format would materially change the output.
+- Treat the split table as a mechanical review artifact, not as the merge-candidate definition of the work.
+- Consolidation means combining distinct source accomplishments that are explicitly part of the same broader contribution; it never means restoring the 2 required split rows from the same original EPB entry back into 1 row.
+- Start merge review by grouping splits into a broad category and a specific working bucket inferred from the source text. Common broad categories include mission, exercise, admin, and volunteer, but those are not a closed list.
+- Use that grouping to surface likely merge candidates first, then test whether the source actually supports the merge.
+- If 2 items came from the same original statement, treat that as a warning sign and usually do not merge them, but do not treat it as an absolute bar if the source still supports 1 broader contribution.
+- Do not propose a merge based only on broad theme overlap such as training, readiness, production, leadership, volunteerism, or impact; require explicit source linkage or a clearly inherent sustained effort.
+- Before proposing any merge, apply this proof test: the merged accomplishment must still read as one coherent broader contribution without adding connective assumptions that are not already supported by the source text.
+- Preserve the strongest source numbers, scale, and rolled-up math in any proposed merge. If the merge drops or weakens the core math, it is a bad merge.
+- If explicit linkage is not clear from the source text after the grouping pass, default to no merge.
+- The split-review step must use the exact split-review table from `decoration-splitting.md`; do not replace it with prose lists, alternate headers, likely-cut notes, or ranking commentary.
+- If the split count math or split-review format is wrong, loop back and rebuild the split stage before showing it to the user.
+- Use the Python split helper once per source statement for raw sentence-based splits, then manually review any returned 4-sentence split for a possible `3+1` override and resolve flagged edge cases and opener repairs before building the split-review table.
+- Do not treat the raw split table as a completed review step; after splitting, the agent must still check for valid consolidation candidates and fill the `Proposed Merges` section before showing split review.
+- Do not ask for award period, role, unit, rank, name, or other intro metadata unless the user explicitly wants help filling the intro line.
 
 ## Resources
 

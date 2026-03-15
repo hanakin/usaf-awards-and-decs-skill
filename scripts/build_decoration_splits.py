@@ -53,6 +53,12 @@ def main() -> int:
         print(f"SPLIT 2: {sentences[2]} {sentences[3]}")
         return 0
 
+    if len(sentences) == 3 or len(sentences) >= 5:
+        print(f"EDGE_CASE: manual review required for {len(sentences)} sentences")
+        for index, sentence in enumerate(sentences, start=1):
+            print(f"SPLIT {index}: {sentence}")
+        return 3
+
     for index, sentence in enumerate(sentences, start=1):
         print(f"SPLIT {index}: {sentence}")
     return 0
