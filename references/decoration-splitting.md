@@ -37,8 +37,9 @@ Apply splitting in this order.
 
 ### 5. Check for the 4-sentence edge case
 
-- If a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` is a separate result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
+- If a 4-sentence entry clearly reads as one sustained accomplishment across sentences `1+2+3`, and sentence `4` starts a separate accomplishment, result, recognition, or follow-on effect, split it as sentences `1+2+3` into split `1` and sentence `4` into split `2`
 - Use this edge case only when the normal `1+2` and `3+4` split would break the meaning
+- This includes cases where sentences `1+2+3` stay together as one volunteer, mission, modernization, or development accomplishment, and sentence `4` introduces a different standalone accomplishment
 
 ### 6. Preserve wording during split review
 
