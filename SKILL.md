@@ -75,9 +75,15 @@ This skill is assistive and incremental by default. Do not assume the user wants
   - then rank the approved consolidated and unconsolidated accomplishments together and show that ranking for review
   - stop for user feedback on final selection and order before drafting the citation
   - only build the citation after both review gates are complete, unless the user explicitly tells you to skip them
+- For decorations, treat the split table as a mechanical review artifact, not as the merge-candidate definition of the work.
+- For decorations, consolidation means combining distinct source accomplishments that are explicitly part of the same broader contribution; it never means restoring the 2 required split rows from the same original EPB entry back into 1 row.
+- For decorations, do not propose a merge based only on broad theme overlap such as training, readiness, production, leadership, volunteerism, or impact; require explicit source linkage.
+- For decorations, before proposing any merge, apply this proof test: the merged accomplishment must still read as one coherent broader contribution without adding connective assumptions that are not already supported by the source text.
+- For decorations, if explicit linkage is not clear from the source text, default to no merge.
 - For decorations, the split-review step must use the exact split-review table from `decoration-splitting.md`; do not replace it with prose lists, alternate headers, likely-cut notes, or ranking commentary.
 - For decorations, if the split count math or split-review format is wrong, loop back and rebuild the split stage before showing it to the user.
-- For decorations, use the Python split helper for deterministic cases first, then manually resolve flagged edge cases and opener repairs before rerunning validation and showing the split review.
+- For decorations, use the Python split helper once per source statement for raw sentence-based splits, then manually review any returned 4-sentence split for a possible `3+1` override and resolve flagged edge cases and opener repairs before building the split-review table.
+- For decorations, do not treat the raw split table as a completed review step; after splitting, the agent must still check for valid consolidation candidates and fill the `Proposed Merges` section before showing split review.
 - For decorations, do not ask for award period, role, unit, rank, name, or other intro metadata unless the user explicitly wants help filling the intro line.
 - If the task looks compliance-sensitive or template-sensitive, ask for the template only when the missing format would materially change the output.
 
@@ -106,9 +112,7 @@ This skill is assistive and incremental by default. Do not assume the user wants
 - Read [references/performance-brief-intake.md](references/performance-brief-intake.md) for performance-brief intake.
 - Read [references/award-intake.md](references/award-intake.md) for award-package intake.
 - Use [scripts/count_text.py](scripts/count_text.py) when exact length compliance matters.
-- Use [scripts/run_decoration_split_workflow.py](scripts/run_decoration_split_workflow.py) as the default command for decoration split review. It builds deterministic splits first, then validates the split-review table.
-- Use [scripts/build_decoration_splits.py](scripts/build_decoration_splits.py) to generate deterministic decoration splits when you need the raw pre-validation output.
-- Use [scripts/validate_decoration_split_review.py](scripts/validate_decoration_split_review.py) to validate decoration split-review tables before showing them to the user.
+- Use [scripts/build_decoration_splits.py](scripts/build_decoration_splits.py) once per source statement to generate deterministic decoration splits before manually handling edge cases and building the split-review table.
 - Use [scripts/check_spelling_grammar.py](scripts/check_spelling_grammar.py) to flag likely spelling and grammar issues before final delivery.
 - Use [scripts/search_tongue_and_quill.py](scripts/search_tongue_and_quill.py) to locate handbook guidance on grammar, punctuation, tone, structure, bullets, memorandums, abbreviations, capitalization, and numbers.
 - Use [scripts/validate_acronyms.py](scripts/validate_acronyms.py) to flag acronym-like tokens that may violate the approved guidance.

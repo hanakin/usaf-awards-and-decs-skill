@@ -1,10 +1,13 @@
 # Decoration Consolidation
 
 Use this file for the merge-review stage of decoration work.
+The split table is not a final review product by itself. After splitting, always check the table for valid consolidation candidates before showing split review to the user.
 
 ## Consolidation rule
 
 Consolidate only explicitly related accomplishments.
+Consolidation merges distinct source accomplishments into 1 stronger broader contribution.
+Consolidation never means recombining the 2 required split rows from the same original EPB entry.
 
 Good consolidation candidates are:
 
@@ -19,10 +22,21 @@ Consolidate only when the grouped items:
 - are explicitly related in content, not just loosely similar in theme
 - can be rewritten into one stronger accomplishment statement without losing the core facts
 - preserve the strongest metrics from the component items
+- would still obviously read as 1 broader contribution to a reviewer who only saw the source text
+
+Use this proof test before proposing a merge:
+
+- ask whether the linkage is explicit in the source text or clearly inherent in the same sustained effort
+- ask whether the merged line can be written without inventing connective reasoning such as "both support readiness" or "both involve production"
+- if either answer is no, do not merge
 
 Do not consolidate items that are only thematically similar.
 Do not consolidate items that would make the final citation sentence confusing or bloated.
 Do not simply stack the original statements together and call that consolidation.
+Do not merge items merely because they share a year, ALQ category, or repeated metric pattern.
+Do not merge unrelated mission production and training items.
+Do not merge unrelated readiness, volunteer, or leadership items unless the source makes them part of the same sustained effort.
+Do not skip the merge check just because the split table already looks complete.
 
 ## How to consolidate
 
@@ -47,6 +61,13 @@ Before accepting a merged accomplishment, verify:
 - no critical qualifier was dropped
 - no unrelated event was pulled in just because it sounded similar
 - the final rewritten accomplishment still reads as one coherent accomplishment
+
+## Invalid merge examples
+
+- invalid: split `5` plus split `6` when those are simply the 2 required split rows from one original `M23` entry
+- invalid: analytic production plus Tactical Combat Casualty Care instruction just because both are strong and citation space is limited
+- invalid: 2 unrelated training items merged only because both improve readiness
+- invalid: 2 unrelated intelligence products merged only because both involve reporting or production
 
 ## Worked example
 
