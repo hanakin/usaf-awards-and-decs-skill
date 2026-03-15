@@ -1,13 +1,10 @@
 # Decoration Accomplishment Ranking
 
-Use this reference before drafting a decoration citation body. Do not pick accomplishments by intuition alone. Split the source statements into individual accomplishments first, consolidate explicitly related items second, stop for review, then rank the approved consolidated and remaining standalone accomplishments before building the citation.
+Use this reference only after split review and merge review are complete. Do not pick accomplishments by intuition alone. Rank the approved consolidated and remaining standalone accomplishments before building the citation.
 
 ## Purpose
 
-- split multi-part source statements into separate accomplishments first
-- consolidate explicitly related accomplishments before ranking
 - select the strongest 2 to 4 accomplishments for the citation body
-- consolidate explicitly related accomplishments so the citation captures the most content without sounding repetitive
 - preserve metrics and mission effect instead of collapsing into generic praise
 - prevent weaker community, admin, or low-consequence items from displacing higher-value operational impact
 
@@ -19,10 +16,9 @@ Use this reference before drafting a decoration citation body. Do not pick accom
 - During split review, use merge IDs like `M1`, `M2` only for the proposed merged rewrites
 - During ranking review, use the `Rank` numbers in the first column as the user-facing review references
 - Do not introduce any other numbering scheme during review
-- Treat each provided EPB or OPB statement as potentially containing more than one accomplishment
-- Use the splitting rules from `decoration-guidance.md` as the authoritative split logic before ranking begins
-- Assume the split review step is already complete before using this file to rank the pool
-- Consolidate similar accomplishments into grouped accomplishment clusters
+- Use `decoration-splitting.md` as the authoritative split logic before ranking begins
+- Use `decoration-consolidation.md` as the authoritative merge logic before ranking begins
+- Assume the split review and merge review steps are already complete before using this file to rank the pool
 - Rank the approved consolidated accomplishment clusters together with the remaining approved standalone splits, not the original statement shell and not the raw unsorted split list
 
 ## HLR rule
@@ -30,66 +26,6 @@ Use this reference before drafting a decoration citation body. Do not pick accom
 - `HLR` means only actual `H` Higher Level Review content
 - Do not give non-`H` statements hidden `HLR` credit just because they mention senior visibility, first-ever work, or by-name-requested support
 - If a non-`H` accomplishment has stature or visibility, capture that under distinctiveness instead
-
-## Consolidation rule
-
-Before ranking, group accomplishments that clearly belong together, such as:
-
-- training-program development plus training integration plus analyst development
-- targeting-tool modernization events tied to the same tool effort
-- readiness and exercise efforts tied to the same readiness line
-- senior-leader engagement efforts tied to the same explicit issue set
-
-Consolidate only when the grouped items:
-
-- reinforce the same broader contribution
-- are explicitly related in content, not just loosely similar in theme
-- can be rewritten into one stronger accomplishment statement without losing the core facts
-- preserve the strongest metrics from the component items
-
-Do not consolidate items that are only thematically similar.
-Do not consolidate items that would make the final citation sentence confusing or bloated.
-Do not simply stack the original statements together and call that consolidation.
-Do not collapse three distinct events into one synthetic event just because they share a topic.
-
-## How to consolidate
-
-When two accomplishments are explicitly related:
-
-1. pull out the most important facts from each source accomplishment
-2. keep the strongest metrics, scale, and consequence
-3. remove duplicate setup language
-4. rewrite the material into one stronger accomplishment statement
-
-The output of consolidation should be a rewritten accomplishment, not a pasted bundle of the original statements.
-
-Good consolidation:
-
-- combines related tool-modernization facts into one cleaner modernization accomplishment
-- combines related training-development facts into one stronger force-development accomplishment
-- increases density by preserving the best numbers and clearest mission effect
-- preserves source-count logic exactly when the source already gives the rolled-up count, such as `three events`
-- preserves critical qualifiers that materially strengthen the accomplishment, such as `outside his career field`
-
-Bad consolidation:
-
-- listing both source statements back to back
-- preserving weak or duplicate details just because they appeared in the source
-- merging items that only share a broad topic
-- breaking a source roll-up back into smaller subcounts when the stronger fact is the rolled-up total
-- dropping a critical qualifier that changes why the accomplishment matters
-
-## Consolidation validation
-
-Before accepting a consolidated accomplishment, verify all of the following:
-
-- the rewritten accomplishment is stronger than either source item alone
-- no source fact is double-counted
-- no rolled-up source fact is re-expanded into weaker subcounts
-- no critical qualifier was dropped
-- no unrelated event was pulled in just because it sounded similar
-- the final rewritten accomplishment still reads as one coherent accomplishment
-- the preserved metrics are the strongest available from the source set
 
 ## Scoring model
 
@@ -190,38 +126,9 @@ Do not build the citation until the user has reviewed the ranking output and con
 
 ## Output format for ranking help
 
-When the user asks for help choosing accomplishments for a decoration, use this two-pass review process.
+When the user asks for help choosing accomplishments for a decoration, use this review step only after split review and merge review are already complete.
 
-First pass:
-
-1. the split accomplishment list with stable IDs
-2. the proposed consolidation groups with stable IDs
-3. a request for user review and feedback on the splits and proposed consolidations
-
-Use this exact display template:
-
-Split Review
-
-| Split # | EPB Ref | Merged ID | Split |
-|---|---|---|---|
-| 1 | E23 | M1 | [full split text] |
-| 2 | E23 | M1 | [full split text] |
-| 3 | L24 |  | [full split text] |
-| 4 | I25 | M2 | [full split text] |
-
-Proposed Merges
-- `M1` [rewritten merged accomplishment]
-- `M2` [rewritten merged accomplishment]
-
-Review Needed
-- Valid merges:
-- Invalid merges:
-- Missing merges:
-
-For feedback on this table, the user should always reply using the first-column numbers, not the `EPB Ref` or `Merged ID` values.
-Do not replace this table with a numbered split outline, clause list, or freeform prose summary.
-
-Second pass, only after that feedback:
+Show:
 
 1. the ranked final pool, including approved consolidated items and remaining standalone splits
 2. the recommended accomplishment order to carry into the citation
@@ -251,13 +158,7 @@ Review Needed
 
 For feedback on this table, the user should always reply using the `Rank` numbers in the first column, not the `Source` values.
 
-Only after the second review step is complete should the citation be drafted.
-
-When showing split accomplishments for ranking, preserve the source wording as much as possible and only make the minimum wording change needed to let a split stand alone cleanly.
-At each step, provide a short example from the approved example set or a short modeled example based on that set to show what a good split, good consolidation, or good ranking target looks like.
-When showing rankings, use a table with a `Rank` column, a `Source` column, and a `Text` column.
-
-## What right looks like
+Only after ranking review is complete should the citation be drafted.
 
 Use worked examples during decoration ranking help instead of explaining the workflow in the abstract.
 

@@ -24,6 +24,7 @@ Apply splitting in this order.
 - If the source uses a single run-on sentence but clearly contains two accomplishments, normalize it into 2 sentence-level split items before review
 - Do not use this rule for entries that already contain 2 or 4 sentences
 - Use meaning, not trigger words, to identify the break
+- If the downstream effect is grammatically attached to the first clause but functionally describes a separate accomplishment or result, still split it
 - Keep the setup, training, certification, or action cluster together in split `1`
 - Move the distinct downstream effect, operational result, reporting result, recognition, or follow-on accomplishment into split `2`
 

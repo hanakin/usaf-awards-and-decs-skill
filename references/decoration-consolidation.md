@@ -48,13 +48,20 @@ Before accepting a merged accomplishment, verify:
 - no unrelated event was pulled in just because it sounded similar
 - the final rewritten accomplishment still reads as one coherent accomplishment
 
-## Example structure
+## Worked example
 
 Source accomplishments:
 
-- Split `7`: [source text]
-- Split `16`: [source text]
+- Split `7` (`I23`): `TSgt Snuffy was by name requested to coordinate with DoD targeting tool team. His knowledge was integral to $41.5M upgrade to 25-yr old app. His feedback was lauded by DoD joint staff as "most detailed ever".`
+- Split `16` (`I24`): `TSgt Snuffy participated in 2 DoD Joint Staff development initiatives to re-design the tool of record for targeting. His expertise and knowledge was lauded as best feedback they have ever received.`
 
 Proposed merge:
 
-- `M2`: [rewritten merged accomplishment]
+- `M2`: `TSgt Snuffy supported 3 DoD targeting-tool modernization events, helped drive a $41.5M upgrade to a 25-yr old app, and delivered feedback lauded by joint staff as the strongest ever.`
+
+Why this works:
+
+- both source accomplishments are explicitly tied to the same targeting-tool modernization effort
+- the merge preserves the strongest rolled-up scale and metric
+- duplicate praise language is collapsed into one stronger result
+- the rewritten text stays close to source wording instead of jumping straight to final citation prose

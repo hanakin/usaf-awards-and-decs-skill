@@ -50,3 +50,16 @@ Use that kind of upward progression only when the source facts support it.
 - Count the fully assembled paragraph exactly
 - Use the real intro length when checking compliance
 - Preserve facts; do not introduce new metrics or claims
+
+## Worked final-paragraph example
+
+Use this as the current worked example of a compliant, strong decoration paragraph:
+
+`Technical Sergeant Peter A. Snuffy distinguished himself by meritorious service as [duty title organization base location placeholder text]. During this period, Snuffy built the joint task force's first order-of-battle database, created a real-time visualization tool, and restored 2.5 million target identifiers across 1,500 databases, resolving a Department of War-wide issue. Additionally, he implemented target development procedures that mitigated delays, resolved legal and reporting issues, and accelerated nineteen kill chains across ten operations. Moreover, Snuffy briefed group and wing leaders three times on analyst utilization across three combatant command task forces, outlined solutions, and earned a wing coin. Furthermore, he orchestrated the first Air Combat Command and Headquarters Air Force functional team visit to a cyber unit, coordinating thirteen stakeholders and exposing utilization, manning, and training issues across United States Cyber Command. Finally, Snuffy supported three Department of War targeting-tool modernization events, driving a 41.5-million-dollar upgrade to a 25-year-old application and delivering feedback recognized as the strongest ever. The distinctive accomplishments of Technical Sergeant Snuffy reflect credit upon himself and the United States Air Force.`
+
+Use this worked example to reinforce the following:
+
+- line transitions should follow `During this period`, `Additionally`, `Moreover`, `Furthermore`, `Finally`
+- numbers should follow the current Tongue and Quill decoration-number guidance
+- unit modifiers like `25-year-old` may stay in figure form
+- the full assembled paragraph must be counted exactly against the live intro length before delivery
